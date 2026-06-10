@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="websolutionssa - Smart Web Solutions for Modern Businesses. Professional website design and development services.">
+    <meta name="theme-color" content="#0D4A7A">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="websolutionssa - Web Solutions">
+    <meta property="og:description" content="Professional website design and development for local businesses">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://websolutionssa.com">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "websolutionssa",
+        "url": "https://websolutionssa.com",
+        "logo": "https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.jpeg",
+        "description": "Professional web design and development services",
+        "telephone": "+27662914212",
+        "email": "websolutionssa0@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ZA"
+        }
+    }
+    </script>
+
+    <title>websolutionssa - Smart Web Solutions for Modern Businesses</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4A7A' width='100' height='100' rx='20'/><path fill='white' d='M25 50 Q25 35 35 35 L35 50 Q35 60 45 65 Q55 60 55 50 L55 35 Q65 35 65 50 Q65 70 45 80 Q25 70 25 50Z'/></svg>" />
+
+    <style>
+        /* ========== CSS VARIABLES & RESET ========== */
+        :root {
+            --color-primary: #0D4A7A;
+            --color-primary-light: #1B5E8F;
+            --color-primary-dark: #092F52;
+            --color-accent: #FFFFFF;
+            --color-neutral: #F5F5F5;
+            --color-muted: #999999;
+            --color-text: #333333;
+            --color-border: #EEEEEE;
+            --color-success: #4CAF50;
+            --color-warning: #FF9800;
+            --color-error: #F44336;
+            --color-open: #4CAF50;
+            --color-closed: #F44336;
+
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+
+            --transition: all 0.3s ease;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+            --shadow-lg: 0 12px 24px rgba(0,0,0,0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            color: var(--color-text);
+            line-height: 1.6;
+            background-color: #FFFFFF;
+        }
+
+        /* ========== TYPOGRAPHY ========== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.25rem; }
+        h6 { font-size: 1rem; }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--color-primary-light);
+        }
+
+        /* ========== LAYOUT ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        /* ========== BUTTONS ========== */
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 4px;
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-neutral);
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe59;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            color: #fff;
+        }
+
+        /* ========== HEADER & NAVIGATION ========== */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--color-accent);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .company-name {
+            font-family: var(--font-primary);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .company-name.mobile-hidden {
+            display: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav a {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--color-text);
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--color-primary);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: var(--color-accent);
+            padding: 120px 20px;
+            text-align: center;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .hero-logo {
+            width: 260px;
+            height: 260px;
+            margin: 0 auto 30px;
+            animation: slideUp 0.8s ease;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .hero-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .hero h1 {
+            color: var(--color-accent);
+            margin-bottom: 20px;
+            animation: slideUp 0.8s ease 0.2s both;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            animation: slideUp 0.8s ease 0.4s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            animation: slideUp 0.8s ease 0.6s both;
+        }
+
+        .hero .btn {
+            padding: 14px 40px;
+            font-size: 1.1rem;
+        }
+
+        .hero .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .hero .btn-primary:hover {
+            background-color: var(--color-neutral);
+        }
+
+        .hero .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+
+        .hero .btn-secondary:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .trust-strip {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideUp 0.8s ease 0.8s both;
+        }
+
+        .trust-strip p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* ========== SERVICES SECTION ========== */
+        .services {
+            background-color: var(--color-neutral);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--color-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background-color: var(--color-accent);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            font-size: 28px;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: var(--color-text);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .app-creation {
+            background-color: #F0F0F0;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .app-creation h3 {
+            color: var(--color-primary);
+            margin-bottom: 12px;
+        }
+
+        .app-creation p {
+            color: var(--color-text);
+            margin: 0;
+        }
+
+        /* ========== PRICING SECTION (MODERN CARDS) ========== */
+        .pricing {
+            background-color: #FFFFFF;
+        }
+
+        .pricing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .pricing-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: var(--color-accent);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            border: 1px solid rgba(13, 74, 122, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary-light);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            z-index: 2;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(2px);
+        }
+
+        .pricing-card-header {
+            background: var(--color-accent);
+            padding: 32px 24px 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .pricing-card-header h3 {
+            font-size: 1.8rem;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .pricing-price {
+            padding: 12px 0;
+        }
+
+        .price-zar {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--color-primary-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .price-usd {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-muted);
+            display: block;
+            margin-top: 5px;
+        }
+
+        .pricing-features {
+            padding: 24px 28px 32px;
+            flex-grow: 1;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            color: var(--color-text);
+        }
+
+        .feature-item i {
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            width: 22px;
+            text-align: center;
+        }
+
+        .pricing-action {
+            padding: 8px 24px 32px;
+            text-align: center;
+        }
+
+        .pricing-action .btn {
+            width: 100%;
+            border-radius: 40px;
+            font-weight: 600;
+            padding: 12px 0;
+        }
+
+        /* Most popular card accent */
+        .pricing-card.popular {
+            border: 2px solid var(--color-primary);
+            box-shadow: 0 12px 28px rgba(13, 74, 122, 0.2);
+            transform: scale(1.02);
+        }
+
+        .pricing-card.popular:hover {
+            transform: translateY(-12px) scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .pricing-grid {
+                gap: 30px;
+            }
+            .pricing-card {
+                max-width: 100%;
+            }
+            .pricing-card.popular {
+                transform: scale(1);
+            }
+            .pricing-card.popular:hover {
+                transform: translateY(-8px);
+            }
+            .price-zar {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* ========== ABOUT SECTION ========== */
+        .about {
+            background-color: var(--color-accent);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* ========== PORTFOLIO SECTION ========== */
+        .portfolio {
+            background-color: var(--color-neutral);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            background-color: var(--color-accent);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            cursor: pointer;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .portfolio-content {
+            padding: 25px;
+        }
+
+        .portfolio-content h3 {
+            color: var(--color-primary);
+            margin-bottom: 12px;
+        }
+
+        .portfolio-content p {
+            font-size: 0.95rem;
+            color: var(--color-text);
+            margin-bottom: 15px;
+        }
+
+        .view-btn {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .view-btn::after {
+            content: ' →';
+        }
+
+        /* ========== REVIEWS SECTION ========== */
+        .reviews {
+            background-color: var(--color-accent);
+        }
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .review-form {
+            background-color: var(--color-neutral);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .review-form h3 {
+            color: var(--color-primary);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(13,74,122,0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #DDD;
+            transition: var(--transition);
+        }
+
+        .star.active,
+        .star-rating .star:hover,
+        .star-rating .star:hover ~ .star {
+            color: #FFC107;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .reviews-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .review-item {
+            background-color: var(--color-neutral);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--color-primary);
+            animation: slideInLeft 0.5s ease;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+
+        .review-name {
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .review-date {
+            font-size: 0.85rem;
+            color: var(--color-muted);
+        }
+
+        .review-rating {
+            color: #FFC107;
+            margin-bottom: 10px;
+        }
+
+        .review-text {
+            color: var(--color-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .moderation-note {
+            background-color: #FFF3CD;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #856404;
+            margin-top: 20px;
+        }
+
+        .form-feedback {
+            display: none;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .form-feedback.success {
+            display: block;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .form-feedback.error {
+            display: block;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        .contact {
+            background-color: var(--color-neutral);
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background-color: var(--color-accent);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-info h3 {
+            color: var(--color-primary);
+            margin-bottom: 20px;
+        }
+
+        .phone-display {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+
+        .phone-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: var(--color-muted);
+            background: #f0f0f0;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .contact-note {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .email-link {
+            display: inline-block;
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background-color: var(--color-accent);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-form h3 {
+            color: var(--color-primary);
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-row.full {
+            grid-template-columns: 1fr;
+        }
+
+        .contact-form .form-feedback {
+            display: none;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .contact-form .form-feedback.success {
+            display: block;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .contact-form .form-feedback.error {
+            display: block;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* ========== STATUS SECTION ========== */
+        .status {
+            background-color: var(--color-accent);
+        }
+
+        .status-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .status-display {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: var(--color-accent);
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .status-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.open {
+            background-color: var(--color-open);
+            box-shadow: 0 0 10px var(--color-open);
+        }
+
+        .status-dot.closed {
+            background-color: var(--color-closed);
+            box-shadow: 0 0 10px var(--color-closed);
+            animation: none;
+        }
+
+        .status-time {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .schedule-table {
+            background-color: var(--color-neutral);
+            padding: 30px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .schedule-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .schedule-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .schedule-table td.today-row {
+            background-color: #e8f4e8;
+            font-weight: 700;
+        }
+        .schedule-table tr:hover {
+            background-color: #F9F9F9;
+        }
+
+        /* ========== TERMS SECTION ========== */
+        .terms {
+            background-color: var(--color-neutral);
+        }
+
+        .terms-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--color-accent);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .terms-content h2 {
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .terms-content ol {
+            margin-left: 20px;
+        }
+
+        .terms-content li {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .terms-content strong {
+            color: var(--color-primary);
+        }
+
+        .terms-content h4 {
+            margin-top: 5px;
+            margin-bottom: 8px;
+            color: var(--color-primary-dark);
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            color: var(--color-accent);
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: var(--color-accent);
+            opacity: 0.9;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-weight: 700;
+            overflow: hidden;
+        }
+        .footer-logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            background-color: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* ========== BACK TO TOP BUTTON ========== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-primary-light);
+            transform: translateY(-3px);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* ========== IMAGE MODAL ========== */
+        .img-modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.85);
+            animation: fadeIn 0.3s ease;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-modal.show {
+            display: flex;
+        }
+        .img-modal-content {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            animation: slideUp 0.3s ease;
+            object-fit: contain;
+        }
+        .img-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            z-index: 3001;
+            transition: var(--transition);
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+        .img-modal-close:hover {
+            color: #ccc;
+            transform: scale(1.1);
+        }
+
+        /* ========== MODAL (General) ========== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: var(--color-accent);
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.3s ease;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-muted);
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            color: var(--color-text);
+        }
+
+        .modal-body {
+            margin-bottom: 30px;
+        }
+
+        .modal-body p {
+            color: var(--color-text);
+            margin: 0;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        /* ========== COOKIE CONSENT ========== */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--color-primary);
+            color: var(--color-accent);
+            padding: 20px;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            z-index: 1500;
+            animation: slideUp 0.5s ease;
+        }
+
+        .cookie-banner.show {
+            display: flex;
+        }
+
+        .cookie-text {
+            flex: 1;
+            font-size: 0.95rem;
+        }
+
+        .cookie-text a {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cookie-accept {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        .cookie-accept:hover {
+            opacity: 0.9;
+        }
+
+        .cookie-decline {
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+
+        .cookie-decline:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            h3 { font-size: 1.3rem; }
+            section { padding: 50px 20px; }
+            .company-name.mobile-hidden { display: none; }
+            .hero-logo { width: 160px; height: 160px; }
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: var(--color-accent);
+                padding: 20px;
+                gap: 15px;
+                box-shadow: var(--shadow-md);
+            }
+            nav ul.show { display: flex; }
+            nav a { display: block; padding: 10px 0; }
+            nav a::after { display: none; }
+            nav a.active { color: var(--color-primary); font-weight: 600; }
+            .hamburger { display: flex; }
+            .hero { padding: 80px 20px; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero-tagline { font-size: 1.1rem; }
+            .hero-cta { flex-direction: column; align-items: center; }
+            .hero .btn { width: 100%; max-width: 300px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .reviews-container { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .contact-buttons { flex-direction: column; align-items: center; }
+            .contact-buttons .btn { width: 100%; max-width: 300px; }
+            .footer-content { grid-template-columns: 1fr; gap: 30px; }
+            .back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 1.2rem; }
+            .cookie-banner { flex-direction: column; align-items: flex-start; }
+            .cookie-actions { width: 100%; flex-direction: column; }
+            .cookie-btn { width: 100%; }
+            .img-modal-content { max-width: 95%; max-height: 80%; }
+            .img-modal-close { top: 10px; right: 15px; font-size: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.3rem; }
+            h3 { font-size: 1.1rem; }
+            .hero { padding: 60px 20px; }
+            .hero-logo { width: 120px; height: 120px; }
+            .phone-display { font-size: 1.5rem; }
+            .modal-content { max-width: 90%; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <img src="https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/w%20logo.jpeg" alt="WebSolutionsSA W Logo" width="40" height="40" style="object-fit:contain;">
+                </div>
+                <span class="company-name">websolutionssa</span>
+            </div>
+            <nav>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-logo">
+            <img src="https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.jpeg" alt="WebSolutionsSA Logo" width="260" height="260" style="object-fit:contain;">
+        </div>
+        <h1>websolutionssa</h1>
+        <p class="hero-tagline">Smart Web Solutions for Modern Businesses</p>
+        <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+        </div>
+        <div class="trust-strip">
+            <p><i class="fas fa-check-circle" style="color:#4CAF50; margin-right:4px;"></i> Professional Websites &nbsp;|&nbsp; <i class="fas fa-check-circle" style="color:#4CAF50; margin-right:4px;"></i> Fast Delivery &nbsp;|&nbsp; <i class="fas fa-check-circle" style="color:#4CAF50; margin-right:4px;"></i> Affordable Pricing</p>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer a range of digital solutions to help your business grow online.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><i class="fas fa-globe"></i></div><h3>Website Design</h3><p>Custom, responsive websites tailored to your brand and business needs.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-bolt"></i></div><h3>Website Development</h3><p>Fast, secure, and scalable websites built with modern technologies.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-wrench"></i></div><h3>Website Maintenance</h3><p>Ongoing support and updates to keep your website running smoothly.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-chart-line"></i></div><h3>SEO Optimization</h3><p>Improve your search engine rankings and drive more organic traffic.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-mobile-alt"></i></div><h3>Responsive Design</h3><p>Websites that look and function perfectly on all devices and screens.</p></div>
+                <div class="service-card"><div class="service-icon"><i class="fas fa-shopping-cart"></i></div><h3>E-Commerce</h3><p>Online stores that are easy to manage and built to convert visitors.</p></div>
+            </div>
+            <div class="app-creation">
+                <span class="coming-soon-badge">Coming Soon</span>
+                <h3>App Creation</h3>
+                <p>We're expanding into mobile app development. Stay tuned for more details!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION (Premium Modern Cards) -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the perfect package for your business goals.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>Starter</h3>
+                        <div class="pricing-price">
+                            <span class="price-zar">R500</span>
+                            <span class="price-usd">≈ $30 USD</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span>1-page website</span></div>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="#contact" class="btn btn-secondary">Get Started</a>
+                    </div>
+                </div>
+                <!-- Business Plan - Most Popular -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">⭐ Most Popular</div>
+                    <div class="pricing-card-header">
+                        <h3>Business</h3>
+                        <div class="pricing-price">
+                            <span class="price-zar">R1200</span>
+                            <span class="price-usd">≈ $65 USD</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span>Multi-page + mobile optimization</span></div>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="#contact" class="btn btn-primary">Choose Plan</a>
+                    </div>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>Premium</h3>
+                        <div class="pricing-price">
+                            <span class="price-zar">R2500</span>
+                            <span class="price-usd">≈ $135 USD</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span>Full custom business website</span></div>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="#contact" class="btn btn-secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container"><div class="about-content"><h2>About WebSolutionsSA</h2><p>WebSolutionsSA is a South African-based web design and development company dedicated to helping small and medium businesses establish a strong online presence. We specialize in creating beautiful, functional, and affordable websites that drive results.</p><p>Our mission is simple: to provide high-quality digital solutions that empower businesses to compete and thrive in the modern marketplace. Whether you need a simple landing page, a full e-commerce platform, or ongoing website maintenance, we've got you covered.</p><p>We believe every business deserves a professional website, regardless of budget. That's why we offer competitive pricing without compromising on quality.</p></div></div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio"><div class="container"><div class="section-header"><h2>Our Portfolio</h2><p>Take a look at some of our recent work and templates.</p></div><div class="portfolio-grid"><div class="portfolio-item" onclick="openImageModal('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20201627.png')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20201627.png');"></div><div class="portfolio-content"><h3>Business Website Template</h3><p>A clean, modern business website design perfect for small to medium enterprises.</p><span class="view-btn">View Project</span></div></div><div class="portfolio-item" onclick="openImageModal('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20203511.png')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20203511.png');"></div><div class="portfolio-content"><h3>Professional Landing Page</h3><p>A high-converting landing page design with clear call-to-action elements.</p><span class="view-btn">View Project</span></div></div><div class="portfolio-item" onclick="openImageModal('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20205554.png')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/Screenshot%202026-04-30%20205554.png');"></div><div class="portfolio-content"><h3>Modern Web Design</h3><p>A stylish, contemporary web layout suitable for various industries and brands.</p><span class="view-btn">View Project</span></div></div></div></div></section>
+    
+    <!-- IMAGE MODAL -->
+    <div class="img-modal" id="imageModal" onclick="closeImageModal()"><button class="img-modal-close" onclick="closeImageModal()">&times;</button><img class="img-modal-content" id="imageModalImg" src="" alt="Portfolio preview" onclick="event.stopPropagation()"></div>
+
+    <!-- REVIEWS SECTION (all dates updated to 2026) -->
+    <section class="reviews" id="reviews"><div class="container"><div class="section-header"><h2>Leave a Review</h2><p>We value your feedback! Share your experience with us.</p></div><div class="reviews-container"><div class="review-form"><h3>Submit Your Review</h3><form id="reviewForm" onsubmit="submitReview(event)"><div class="form-group"><label for="reviewName">Your Name *</label><input type="text" id="reviewName" name="name" placeholder="Enter your full name" required></div><div class="form-group"><label for="reviewEmail">Your Email *</label><input type="email" id="reviewEmail" name="email" placeholder="Enter your email address" required></div><label style="font-weight:500;color:var(--color-text);display:block;margin-bottom:8px;">Your Rating *</label><div class="star-rating" id="starRating"><input type="radio" name="rating" value="5" id="star5"><label for="star5" class="star" onclick="setRating(5)">&#9733;</label><input type="radio" name="rating" value="4" id="star4"><label for="star4" class="star" onclick="setRating(4)">&#9733;</label><input type="radio" name="rating" value="3" id="star3"><label for="star3" class="star" onclick="setRating(3)">&#9733;</label><input type="radio" name="rating" value="2" id="star2"><label for="star2" class="star" onclick="setRating(2)">&#9733;</label><input type="radio" name="rating" value="1" id="star1"><label for="star1" class="star" onclick="setRating(1)">&#9733;</label></div><div class="form-group"><label for="reviewComment">Your Review *</label><textarea id="reviewComment" name="comment" placeholder="Tell us about your experience..." required></textarea></div><div class="checkbox-group"><input type="checkbox" id="reviewConsent" name="consent" required><label for="reviewConsent">I consent to having my review published on this website. *</label></div><button type="submit" class="btn btn-primary" style="width:100%;">Submit Review</button><div class="form-feedback" id="reviewFeedback"></div></form><div class="moderation-note"><i class="fas fa-lock"></i> <strong>Review Moderation:</strong> All reviews are manually reviewed before being published. Your review will not appear immediately.</div></div><div class="reviews-list" id="reviewsList"><div class="review-item"><div class="review-header"><span class="review-name">Thabo M.</span><span class="review-date">March 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Excellent service! My business website was delivered quickly and looks amazing. Highly recommended!</p></div><div class="review-item"><div class="review-header"><span class="review-name">Lerato K.</span><span class="review-date">February 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Professional and affordable. WebSolutionsSA built exactly what I needed for my startup.</p></div><div class="review-item"><div class="review-header"><span class="review-name">Sipho D.</span><span class="review-date">January 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Great communication throughout the project. The final website exceeded my expectations!</p></div></div></div></div></section>
+
+    <section class="contact" id="contact"><div class="container"><div class="section-header"><h2>Contact Us</h2><p>Get in touch — we'd love to hear from you!</p></div><div class="contact-container"><div class="contact-info"><h3>Reach Out to Us</h3><div class="phone-display">+27 66 291 4212</div><span class="phone-label"><i class="fas fa-phone-alt"></i> Call only (for inquiries)</span><p class="contact-note">Available during business hours for phone inquiries.</p><div class="contact-buttons"><a href="tel:+27662914212" class="btn btn-primary call-btn"><i class="fas fa-phone-alt"></i> Call Now</a><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I%20would%20like%20to%20make%20an%20inquiry%20about%20a%20website." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a></div><a href="mailto:websolutionssa0@gmail.com" class="email-link"><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</a></div><div class="contact-form"><h3>Send a Message</h3><p style="color:var(--color-muted);margin-bottom:20px;">Fill out the form below and we'll get back to you as soon as possible.</p><form id="contactForm" onsubmit="submitContactForm(event)"><div class="form-row"><div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" name="name" placeholder="Enter your full name" required></div><div class="form-group"><label for="contactEmail">Your Email *</label><input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required></div></div><div class="form-row"><div class="form-group"><label for="contactPhone">Phone Number</label><input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number"></div></div><div class="form-row full"><div class="form-group"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="message" placeholder="Tell us about your project or inquiry..." required></textarea></div></div><div class="checkbox-group"><input type="checkbox" id="contactConsent" name="consent" required><label for="contactConsent">I consent to being contacted regarding my inquiry. *</label></div><button type="submit" class="btn btn-primary" style="width:100%;">Send a Message</button><div class="form-feedback" id="contactFeedback"></div></form></div></div></div></section>
+
+    <section class="status" id="status"><div class="container"><div class="section-header"><h2>Business Hours</h2><p>Check if we're currently available.</p></div><div class="status-container"><div class="status-display"><div class="status-indicator"><span class="status-dot" id="statusDot"></span><span id="statusText">Checking...</span></div><p class="status-time" id="statusTime"></p></div><div class="schedule-table"><table><thead><tr><th>Day</th><th>Hours</th></tr></thead><tbody><tr id="row-mon"><td>Monday</td><td>08:00 – 17:00</td></tr><tr id="row-tue"><td>Tuesday</td><td>08:00 – 17:00</td></tr><tr id="row-wed"><td>Wednesday</td><td>08:00 – 17:00</td></tr><tr id="row-thu"><td>Thursday</td><td>08:00 – 17:00</td></tr><tr id="row-fri"><td>Friday</td><td>08:00 – 16:00</td></tr><tr id="row-sat"><td>Saturday</td><td>09:00 – 13:00</td></tr><tr id="row-sun"><td>Sunday</td><td>Closed</td></tr></tbody></table></div></div></div></section>
+
+    <section class="terms" id="terms"><div class="container"><div class="terms-content"><h2>Terms and Conditions</h2><ol><li><h4>Introduction</h4>By using the services of WebSolutionsSA, you agree to the terms and conditions outlined below. These terms are legally binding and apply to all clients.</li><li><h4>Services</h4>WebSolutionsSA provides website design and related digital services based on client requirements. All work will be discussed and agreed upon before development begins.</li><li><h4>Payment Policy (STRICT)</h4>Full payment or agreed deposit must be made before any website is delivered or published. No website, files, or access will be given to the client until proof of payment is received and the payment has fully reflected. Any delays in payment will result in delays in project completion or delivery.</li><li><h4>Proof of Payment</h4>Clients must send valid proof of payment. WebSolutionsSA reserves the right to wait for bank confirmation before continuing or releasing any work.</li><li><h4>Ownership &amp; Intellectual Property</h4>All websites, designs, and code remain the property of WebSolutionsSA until full payment is received. Once payment is complete, ownership is transferred to the client unless otherwise agreed.</li><li><h4>Unauthorized Use / Theft</h4>Any attempt to copy, steal, reuse, or distribute website designs, code, or content without permission will be considered a violation. WebSolutionsSA reserves the right to take legal action against any individual or business involved in theft or unauthorized use of its work.</li><li><h4>Revisions</h4>Clients are allowed a reasonable number of revisions as agreed at the start of the project. Excessive changes beyond the agreement may result in additional charges.</li><li><h4>Project Delays</h4>Delays caused by the client (late responses, missing content, etc.) may affect delivery time. WebSolutionsSA is not responsible for delays caused by the client.</li><li><h4>Refund Policy</h4>Once work has started, no refunds will be issued. Deposits are non-refundable.</li><li><h4>Communication</h4>All official communication will be done through agreed platforms (e.g., WhatsApp Business, email). Clients are expected to respond within a reasonable time to avoid delays.</li><li><h4>Right to Refuse Service</h4>WebSolutionsSA reserves the right to refuse or cancel service to anyone at any time for valid reasons.</li><li><h4>Agreement</h4>By working with WebSolutionsSA, the client confirms that they have read, understood, and agreed to these terms and conditions.</li></ol></div></div></section>
+
+    <footer><div class="footer-content"><div class="footer-section"><div class="footer-logo"><div class="footer-logo-icon"><img src="https://raw.githubusercontent.com/tlhompo99/websolutionsSA/refs/heads/main/w%20logo.jpeg" alt="WebSolutionsSA Logo" width="40" height="40" style="object-fit:contain;"></div><span style="font-weight:700;font-size:1.1rem;">websolutionssa</span></div><p style="opacity:0.9;font-size:0.9rem;">Smart web solutions for modern businesses. We help you build a strong online presence.</p><div class="social-icons"><a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-section"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-section"><h4>Contact Info</h4><ul><li><i class="fas fa-phone-alt"></i> +27 66 291 4212</li><li><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</li><li><i class="fas fa-map-marker-alt"></i> South Africa</li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> websolutionssa. All rights reserved.</p></div></footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">&#8593;</button>
+    <div class="cookie-banner" id="cookieBanner"><span class="cookie-text">This website uses cookies to ensure you get the best experience. <a href="#terms">Learn more</a></span><div class="cookie-actions"><button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button><button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button></div></div>
+
+    <script>
+        function toggleMenu() { document.getElementById('nav-menu').classList.toggle('show'); }
+        document.querySelectorAll('#nav-menu a').forEach(link => link.addEventListener('click', () => document.getElementById('nav-menu').classList.remove('show')));
+        window.addEventListener('scroll', function() { let btn = document.getElementById('backToTop'); if (window.scrollY > 500) btn.classList.add('show'); else btn.classList.remove('show'); });
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function openImageModal(imageUrl) { let modal = document.getElementById('imageModal'); document.getElementById('imageModalImg').src = imageUrl; modal.classList.add('show'); document.body.style.overflow = 'hidden'; }
+        function closeImageModal() { document.getElementById('imageModal').classList.remove('show'); document.body.style.overflow = ''; }
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeImageModal(); });
+        let selectedRating = 0;
+        function setRating(rating) { selectedRating = rating; let stars = document.querySelectorAll('#starRating .star'); stars.forEach((star, index) => { let starValue = 5 - index; if (starValue <= rating) star.classList.add('active'); else star.classList.remove('active'); }); }
+        var REVIEW_FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORMSPREE_REVIEW_FORM_ID';
+        function submitReview(event) { event.preventDefault(); let feedbackEl = document.getElementById('reviewFeedback'); let submitBtn = event.target.querySelector('button[type="submit"]'); if (selectedRating === 0) { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Please select a star rating before submitting.'; feedbackEl.style.display = 'block'; return; } submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback'; feedbackEl.style.display = 'none'; let formData = { name: document.getElementById('reviewName').value.trim(), email: document.getElementById('reviewEmail').value.trim(), rating: selectedRating, comment: document.getElementById('reviewComment').value.trim(), consent: document.getElementById('reviewConsent').checked, _subject: 'New Website Review - WebSolutionsSA', _replyto: document.getElementById('reviewEmail').value.trim(), form_type: 'review' }; fetch(REVIEW_FORMSPREE_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(formData) }).then(response => { if (response.ok) { feedbackEl.className = 'form-feedback success'; feedbackEl.textContent = 'Thank you! Your review has been submitted for moderation and will appear on the website once approved.'; feedbackEl.style.display = 'block'; document.getElementById('reviewForm').reset(); selectedRating = 0; document.querySelectorAll('#starRating .star').forEach(s => s.classList.remove('active')); } else { throw new Error('Form submission failed'); } }).catch(error => { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Oops! Something went wrong. Please try again or email us directly at websolutionssa0@gmail.com.'; feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Submit Review'; }); }
+        var CONTACT_FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORMSPREE_CONTACT_FORM_ID';
+        function submitContactForm(event) { event.preventDefault(); let feedbackEl = document.getElementById('contactFeedback'); let submitBtn = event.target.querySelector('button[type="submit"]'); submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback'; feedbackEl.style.display = 'none'; let formData = { name: document.getElementById('contactName').value.trim(), email: document.getElementById('contactEmail').value.trim(), phone: document.getElementById('contactPhone').value.trim(), message: document.getElementById('contactMessage').value.trim(), consent: document.getElementById('contactConsent').checked, _subject: 'New Contact Inquiry - WebSolutionsSA', _replyto: document.getElementById('contactEmail').value.trim(), form_type: 'contact' }; fetch(CONTACT_FORMSPREE_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(formData) }).then(response => { if (response.ok) { feedbackEl.className = 'form-feedback success'; feedbackEl.textContent = 'Message sent successfully! We will get back to you as soon as possible.'; feedbackEl.style.display = 'block'; document.getElementById('contactForm').reset(); } else { throw new Error('Form submission failed'); } }).catch(error => { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Oops! Something went wrong. Please try again or contact us directly via WhatsApp or phone.'; feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Send a Message'; }); }
+        var businessHours = {1: { open: '08:00', close: '17:00', day: 'Monday' },2: { open: '08:00', close: '17:00', day: 'Tuesday' },3: { open: '08:00', close: '17:00', day: 'Wednesday' },4: { open: '08:00', close: '17:00', day: 'Thursday' },5: { open: '08:00', close: '16:00', day: 'Friday' },6: { open: '09:00', close: '13:00', day: 'Saturday' },0: { open: null, close: null, day: 'Sunday', closed: true }};
+        function getSASTTime() { let now = new Date(); let utc = now.getTime() + (now.getTimezoneOffset() * 60000); return new Date(utc + 2 * 60 * 60000); }
+        function updateBusinessStatus() { let saTime = getSASTTime(); let day = saTime.getDay(); let hours = saTime.getHours(); let minutes = saTime.getMinutes(); let currentMinutes = hours * 60 + minutes; let todaySchedule = businessHours[day]; let statusDot = document.getElementById('statusDot'); let statusText = document.getElementById('statusText'); let statusTime = document.getElementById('statusTime'); let timeStr = saTime.toLocaleTimeString('en-ZA', { hour: '2-digit', minute: '2-digit', timeZone: 'Africa/Johannesburg' }); let dayStr = todaySchedule.day; let allRows = document.querySelectorAll('.schedule-table tbody tr'); allRows.forEach(r => r.classList.remove('today-row')); let dayRowMap = { 0: 'row-sun', 1: 'row-mon', 2: 'row-tue', 3: 'row-wed', 4: 'row-thu', 5: 'row-fri', 6: 'row-sat' }; let todayRow = document.getElementById(dayRowMap[day]); if (todayRow) todayRow.classList.add('today-row'); if (todaySchedule.closed) { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (We are closed on Sundays)'; } else { let openParts = todaySchedule.open.split(':'); let closeParts = todaySchedule.close.split(':'); let openMinutes = parseInt(openParts[0]) * 60 + parseInt(openParts[1]); let closeMinutes = parseInt(closeParts[0]) * 60 + parseInt(closeParts[1]); if (currentMinutes >= openMinutes && currentMinutes < closeMinutes) { statusDot.className = 'status-dot open'; statusText.textContent = 'Currently Open'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Open until ' + todaySchedule.close + ')'; } else if (currentMinutes < openMinutes) { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens at ' + todaySchedule.open + ' today)'; } else { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; let nextDay = (day + 1) % 7; let nextSchedule = businessHours[nextDay]; if (nextSchedule.closed) nextDay = (nextDay + 1) % 7; nextSchedule = businessHours[nextDay]; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens ' + nextSchedule.day + ' at ' + nextSchedule.open + ')'; } } }
+        updateBusinessStatus(); setInterval(updateBusinessStatus, 60000);
+        function acceptCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage.setItem('cookiesAccepted', 'true'); }
+        function declineCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage.setItem('cookiesAccepted', 'false'); }
+        if (!localStorage.getItem('cookiesAccepted')) document.getElementById('cookieBanner').classList.add('show');
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        let sections = document.querySelectorAll('section[id]'); let navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', function() { let scrollPos = window.scrollY + 100; sections.forEach(section => { let top = section.offsetTop, height = section.offsetHeight, id = section.getAttribute('id'); if (scrollPos >= top && scrollPos < top + height) { navLinks.forEach(link => { link.classList.remove('active'); if (link.getAttribute('href') === '#' + id) link.classList.add('active'); }); } }); });
+    </script>
+</body>
+</html>
