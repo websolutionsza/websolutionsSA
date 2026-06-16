@@ -84,19 +84,36 @@
         }
 
         /* ========== TYPOGRAPHY ========== */
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: var(--font-primary);
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1rem;
         }
 
-        h1 { font-size: 3rem; }
-        h2 { font-size: 2.5rem; }
-        h3 { font-size: 1.75rem; }
-        h4 { font-size: 1.5rem; }
-        h5 { font-size: 1.25rem; }
-        h6 { font-size: 1rem; }
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+        h5 {
+            font-size: 1.25rem;
+        }
+        h6 {
+            font-size: 1rem;
+        }
 
         p {
             margin-bottom: 1rem;
@@ -342,7 +359,7 @@
         }
 
         .trust-strip {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 8px;
             max-width: 600px;
@@ -744,7 +761,7 @@
         .form-group textarea:focus {
             outline: none;
             border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(13,74,122,0.1);
+            box-shadow: 0 0 0 3px rgba(13, 74, 122, 0.1);
         }
 
         .form-group textarea {
@@ -773,7 +790,7 @@
 
         .star.active,
         .star-rating .star:hover,
-        .star-rating .star:hover ~ .star {
+        .star-rating .star:hover~.star {
             color: #FFC107;
         }
 
@@ -1176,7 +1193,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1185,12 +1202,12 @@
         }
 
         .social-icon:hover {
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-3px);
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             padding-top: 20px;
             text-align: center;
             font-size: 0.9rem;
@@ -1236,7 +1253,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.92);
+            background-color: rgba(0, 0, 0, 0.92);
             justify-content: center;
             align-items: center;
             animation: fadeIn 0.25s ease;
@@ -1251,7 +1268,7 @@
             max-height: 90vh;
             overflow-y: auto;
             border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             position: relative;
         }
         .preview-image {
@@ -1267,7 +1284,7 @@
             font-size: 2rem;
             font-weight: bold;
             color: #fff;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
             width: 42px;
             height: 42px;
             border-radius: 50%;
@@ -1301,7 +1318,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.85);
+            background-color: rgba(0, 0, 0, 0.85);
             animation: fadeIn 0.3s ease;
             align-items: center;
             justify-content: center;
@@ -1313,7 +1330,7 @@
             max-width: 90%;
             max-height: 85%;
             border-radius: 8px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             animation: slideUp 0.3s ease;
             object-fit: contain;
         }
@@ -1344,7 +1361,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             animation: fadeIn 0.3s ease;
         }
 
@@ -1425,41 +1442,80 @@
         }
 
         .cookie-decline:hover {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-30px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.75rem; }
-            h3 { font-size: 1.3rem; }
-            section { padding: 50px 20px; }
-            .company-name.mobile-hidden { display: none; }
-            .hero-logo { width: 200px; }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            section {
+                padding: 50px 20px;
+            }
+            .company-name.mobile-hidden {
+                display: none;
+            }
+            .hero-logo {
+                width: 200px;
+            }
             nav ul {
                 display: none;
                 position: absolute;
@@ -1472,26 +1528,79 @@
                 gap: 15px;
                 box-shadow: var(--shadow-md);
             }
-            nav ul.show { display: flex; }
-            nav a { display: block; padding: 10px 0; }
-            nav a::after { display: none; }
-            nav a.active { color: var(--color-primary); font-weight: 600; }
-            .hamburger { display: flex; }
-            .hero { padding: 80px 20px; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero-tagline { font-size: 1.1rem; }
-            .hero-cta { flex-direction: column; align-items: center; }
-            .hero .btn { width: 100%; max-width: 300px; }
-            .services-grid { grid-template-columns: 1fr; }
-            .reviews-container { grid-template-columns: 1fr; }
-            .form-row { grid-template-columns: 1fr; }
-            .contact-buttons { flex-direction: column; align-items: center; }
-            .contact-buttons .btn { width: 100%; max-width: 300px; }
-            .footer-content { grid-template-columns: 1fr; gap: 30px; }
-            .back-to-top { width: 45px; height: 45px; bottom: 20px; right: 20px; font-size: 1.2rem; }
-            .cookie-banner { flex-direction: column; align-items: flex-start; }
-            .cookie-actions { width: 100%; flex-direction: column; }
-            .cookie-btn { width: 100%; }
+            nav ul.show {
+                display: flex;
+            }
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+            nav a::after {
+                display: none;
+            }
+            nav a.active {
+                color: var(--color-primary);
+                font-weight: 600;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .reviews-container {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .back-to-top {
+                width: 45px;
+                height: 45px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+            .cookie-banner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .cookie-actions {
+                width: 100%;
+                flex-direction: column;
+            }
+            .cookie-btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -1553,21 +1662,21 @@
 
     <section class="pricing" id="pricing">
         <div class="container"><div class="section-header"><h2>Simple, Transparent Pricing</h2><p>Choose the perfect package for your business goals.</p></div>
-        <div class="pricing-grid">
-            <div class="pricing-card"><div class="pricing-card-header"><h3>Starter</h3><div class="pricing-price"><span class="price-zar">R500</span><span class="price-usd">≈ $30 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>1-page website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Starter%20Plan%20(R500%20for%20a%201-page%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Get Started</a></div></div>
-            <div class="pricing-card popular"><div class="popular-badge">⭐ Most Popular</div><div class="pricing-card-header"><h3>Business</h3><div class="pricing-price"><span class="price-zar">R1200</span><span class="price-usd">≈ $65 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Multi-page + mobile optimization</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Business%20Plan%20(R1200%20for%20multi-page%20%2B%20mobile%20optimization).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-primary">Choose Plan</a></div></div>
-            <div class="pricing-card"><div class="pricing-card-header"><h3>Premium</h3><div class="pricing-price"><span class="price-zar">R2500</span><span class="price-usd">≈ $135 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Full custom business website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Premium%20Plan%20(R2500%20for%20full%20custom%20business%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Contact Sales</a></div></div>
-        </div></div>
+            <div class="pricing-grid">
+                <div class="pricing-card"><div class="pricing-card-header"><h3>Starter</h3><div class="pricing-price"><span class="price-zar">R500</span><span class="price-usd">≈ $30 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>1-page website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Starter%20Plan%20(R500%20for%20a%201-page%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Get Started</a></div></div>
+                <div class="pricing-card popular"><div class="popular-badge">⭐ Most Popular</div><div class="pricing-card-header"><h3>Business</h3><div class="pricing-price"><span class="price-zar">R1200</span><span class="price-usd">≈ $65 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Multi-page + mobile optimization</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Business%20Plan%20(R1200%20for%20multi-page%20%2B%20mobile%20optimization).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-primary">Choose Plan</a></div></div>
+                <div class="pricing-card"><div class="pricing-card-header"><h3>Premium</h3><div class="pricing-price"><span class="price-zar">R2500</span><span class="price-usd">≈ $135 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Full custom business website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Premium%20Plan%20(R2500%20for%20full%20custom%20business%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Contact Sales</a></div></div>
+            </div></div>
     </section>
 
     <section class="about" id="about"><div class="container"><div class="about-content"><h2>About WebSolutionsSA</h2><p>WebSolutionsSA is a South African-based web design and development company dedicated to helping small and medium businesses establish a strong online presence. We specialize in creating beautiful, functional, and affordable websites that drive results.</p><p>Our mission is simple: to provide high-quality digital solutions that empower businesses to compete and thrive in the modern marketplace. Whether you need a simple landing page, a full e-commerce platform, or ongoing website maintenance, we've got you covered.</p><p>We believe every business deserves a professional website, regardless of budget. That's why we offer competitive pricing without compromising on quality.</p></div></div></section>
 
     <section class="portfolio" id="portfolio"><div class="container"><div class="section-header"><h2>Our Portfolio</h2><p>Take a look at some of our recent work and templates.</p></div><div class="portfolio-grid">
-        <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg');"></div><div class="portfolio-content"><h3>Business Website Template</h3><p>A clean, modern business website design perfect for small to medium enterprises.</p><span class="view-btn">View Project</span></div></div>
-        <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg');"></div><div class="portfolio-content"><h3>Professional Landing Page</h3><p>A high-converting landing page design with clear call-to-action elements.</p><span class="view-btn">View Project</span></div></div>
-        <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg');"></div><div class="portfolio-content"><h3>Modern Web Design</h3><p>A stylish, contemporary web layout suitable for various industries and brands.</p><span class="view-btn">View Project</span></div></div>
-    </div></div></section>
-    
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg');"></div><div class="portfolio-content"><h3>Business Website Template</h3><p>A clean, modern business website design perfect for small to medium enterprises.</p><span class="view-btn">View Project</span></div></div>
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg');"></div><div class="portfolio-content"><h3>Professional Landing Page</h3><p>A high-converting landing page design with clear call-to-action elements.</p><span class="view-btn">View Project</span></div></div>
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg');"></div><div class="portfolio-content"><h3>Modern Web Design</h3><p>A stylish, contemporary web layout suitable for various industries and brands.</p><span class="view-btn">View Project</span></div></div>
+            </div></div></section>
+
     <div class="preview-modal" id="previewModal" onclick="closePreviewModal(event)">
         <div class="preview-container" onclick="event.stopPropagation()">
             <button class="preview-close" onclick="closePreviewModal()">&times;</button>
@@ -1583,7 +1692,7 @@
 
     <section class="terms" id="terms"><div class="container"><div class="terms-content"><h2>Terms and Conditions</h2><ol><li><h4>Introduction</h4>By using the services of WebSolutionsSA, you agree to the terms and conditions outlined below. These terms are legally binding and apply to all clients.</li><li><h4>Services</h4>WebSolutionsSA provides website design and related digital services based on client requirements. All work will be discussed and agreed upon before development begins.</li><li><h4>Payment Policy (STRICT)</h4>Full payment or agreed deposit must be made before any website is delivered or published. No website, files, or access will be given to the client until proof of payment is received and the payment has fully reflected. Any delays in payment will result in delays in project completion or delivery.</li><li><h4>Proof of Payment</h4>Clients must send valid proof of payment. WebSolutionsSA reserves the right to wait for bank confirmation before continuing or releasing any work.</li><li><h4>Ownership &amp; Intellectual Property</h4>All websites, designs, and code remain the property of WebSolutionsSA until full payment is received. Once payment is complete, ownership is transferred to the client unless otherwise agreed.</li><li><h4>Unauthorized Use / Theft</h4>Any attempt to copy, steal, reuse, or distribute website designs, code, or content without permission will be considered a violation. WebSolutionsSA reserves the right to take legal action against any individual or business involved in theft or unauthorized use of its work.</li><li><h4>Revisions</h4>Clients are allowed a reasonable number of revisions as agreed at the start of the project. Excessive changes beyond the agreement may result in additional charges.</li><li><h4>Project Delays</h4>Delays caused by the client (late responses, missing content, etc.) may affect delivery time. WebSolutionsSA is not responsible for delays caused by the client.</li><li><h4>Refund Policy</h4>Once work has started, no refunds will be issued. Deposits are non-refundable.</li><li><h4>Communication</h4>All official communication will be done through agreed platforms (e.g., WhatsApp Business, email). Clients are expected to respond within a reasonable time to avoid delays.</li><li><h4>Right to Refuse Service</h4>WebSolutionsSA reserves the right to refuse or cancel service to anyone at any time for valid reasons.</li><li><h4>Agreement</h4>By working with WebSolutionsSA, the client confirms that they have read, understood, and agreed to these terms and conditions.</li></ol></div></div></section>
 
-    <footer><div class="footer-content"><div class="footer-section"><div class="footer-logo"><div class="footer-logo-icon"><img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA Logo" width="40" height="40" style="object-fit:contain;"></div><span style="font-weight:700;font-size:1.1rem;">websolutionssa</span></div><p style="opacity:0.9;font-size:0.9rem;">Smart web solutions for modern businesses. We help you build a strong online presence.</p><div class="social-icons"><a href="https://www.facebook.com/profile.php?id=61590432847744" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-section"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-section"><h4>Contact Info</h4><ul><li><i class="fas fa-phone-alt"></i> +27 66 291 4212</li><li><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</li><li><i class="fas fa-map-marker-alt"></i> South Africa</li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> websolutionssa. All rights reserved.</p></div></footer>
+    <footer><div class="footer-content"><div class="footer-section"><div class="footer-logo"><div class="footer-logo-icon"><img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA Logo" width="40" height="40" style="object-fit:contain;"></div><span style="font-weight:700;font-size:1.1rem;">websolutionssa</span></div><p style="opacity:0.9;font-size:0.9rem;">Smart web solutions for modern businesses. We help you build a strong online presence.</p><div class="social-icons"><a href="https://www.facebook.com/profile.php?id=61590432847744" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/websolutions.sa?igsh=dnVjbmg0ZHc1bjhm&utm_source=qr" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-section"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-section"><h4>Contact Info</h4><ul><li><i class="fas fa-phone-alt"></i> +27 66 291 4212</li><li><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</li><li><i class="fas fa-map-marker-alt"></i> South Africa</li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> websolutionssa. All rights reserved.</p></div></footer>
 
     <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">&#8593;</button>
     <div class="cookie-banner" id="cookieBanner"><span class="cookie-text">This website uses cookies to ensure you get the best experience. <a href="#terms">Learn more</a></span><div class="cookie-actions"><button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button><button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button></div></div>
@@ -1591,9 +1700,11 @@
     <script>
         function toggleMenu() { document.getElementById('nav-menu').classList.toggle('show'); }
         document.querySelectorAll('#nav-menu a').forEach(link => link.addEventListener('click', () => document.getElementById('nav-menu').classList.remove('show')));
-        window.addEventListener('scroll', function() { let btn = document.getElementById('backToTop'); if (window.scrollY > 500) btn.classList.add('show'); else btn.classList.remove('show'); });
+        window.addEventListener('scroll', function() { let btn = document.getElementById('backToTop'); if (window.scrollY > 500) btn.classList.add('show');
+            else btn.classList.remove('show'); });
+
         function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        
+
         function openPreviewModal(imageUrl) {
             const modal = document.getElementById('previewModal');
             const previewImg = document.getElementById('previewImage');
@@ -1601,30 +1712,113 @@
             modal.classList.add('show');
             document.body.style.overflow = 'hidden';
         }
-        function closePreviewModal(event) { 
+
+        function closePreviewModal(event) {
             const modal = document.getElementById('previewModal');
             modal.classList.remove('show');
             document.body.style.overflow = '';
         }
         document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePreviewModal(); });
-        
+
         let selectedRating = 0;
-        function setRating(rating) { selectedRating = rating; let stars = document.querySelectorAll('#starRating .star'); stars.forEach((star, index) => { let starValue = 5 - index; if (starValue <= rating) star.classList.add('active'); else star.classList.remove('active'); }); }
+
+        function setRating(rating) { selectedRating = rating; let stars = document.querySelectorAll('#starRating .star'); stars.forEach((star,
+            index) => { let starValue = 5 - index; if (starValue <= rating) star.classList.add('active');
+            else star.classList.remove('active'); }); }
         var REVIEW_FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORMSPREE_REVIEW_FORM_ID';
-        function submitReview(event) { event.preventDefault(); let feedbackEl = document.getElementById('reviewFeedback'); let submitBtn = event.target.querySelector('button[type="submit"]'); if (selectedRating === 0) { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Please select a star rating before submitting.'; feedbackEl.style.display = 'block'; return; } submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback'; feedbackEl.style.display = 'none'; let formData = { name: document.getElementById('reviewName').value.trim(), email: document.getElementById('reviewEmail').value.trim(), rating: selectedRating, comment: document.getElementById('reviewComment').value.trim(), consent: document.getElementById('reviewConsent').checked, _subject: 'New Website Review - WebSolutionsSA', _replyto: document.getElementById('reviewEmail').value.trim(), form_type: 'review' }; fetch(REVIEW_FORMSPREE_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(formData) }).then(response => { if (response.ok) { feedbackEl.className = 'form-feedback success'; feedbackEl.textContent = 'Thank you! Your review has been submitted for moderation and will appear on the website once approved.'; feedbackEl.style.display = 'block'; document.getElementById('reviewForm').reset(); selectedRating = 0; document.querySelectorAll('#starRating .star').forEach(s => s.classList.remove('active')); } else { throw new Error('Form submission failed'); } }).catch(error => { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Oops! Something went wrong. Please try again or email us directly.'; feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Submit Review'; }); }
+
+        function submitReview(event) { event.preventDefault(); let feedbackEl = document.getElementById('reviewFeedback'); let
+            submitBtn = event.target.querySelector('button[type="submit"]'); if (selectedRating === 0) { feedbackEl
+                .className = 'form-feedback error'; feedbackEl.textContent =
+                'Please select a star rating before submitting.'; feedbackEl.style.display = 'block'; return; }
+            submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback';
+            feedbackEl.style.display = 'none'; let formData = { name: document.getElementById('reviewName').value.trim(),
+                email: document.getElementById('reviewEmail').value.trim(), rating: selectedRating, comment: document
+                    .getElementById('reviewComment').value.trim(), consent: document.getElementById('reviewConsent')
+                    .checked, _subject: 'New Website Review - WebSolutionsSA', _replyto: document.getElementById(
+                        'reviewEmail').value.trim(), form_type: 'review' }; fetch(REVIEW_FORMSPREE_URL, { method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(
+                        formData) }).then(response => { if (response.ok) { feedbackEl.className =
+                        'form-feedback success'; feedbackEl.textContent =
+                        'Thank you! Your review has been submitted for moderation and will appear on the website once approved.'
+                        ; feedbackEl.style.display = 'block'; document.getElementById('reviewForm').reset();
+                        selectedRating = 0; document.querySelectorAll('#starRating .star').forEach(s => s.classList
+                            .remove('active')); } else { throw new Error('Form submission failed'); } }).catch(error => {
+                    feedbackEl.className = 'form-feedback error'; feedbackEl.textContent =
+                        'Oops! Something went wrong. Please try again or email us directly.';
+                    feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled =
+                        false; submitBtn.textContent = 'Submit Review'; }); }
         var CONTACT_FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORMSPREE_CONTACT_FORM_ID';
-        function submitContactForm(event) { event.preventDefault(); let feedbackEl = document.getElementById('contactFeedback'); let submitBtn = event.target.querySelector('button[type="submit"]'); submitBtn.disabled = true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback'; feedbackEl.style.display = 'none'; let formData = { name: document.getElementById('contactName').value.trim(), email: document.getElementById('contactEmail').value.trim(), phone: document.getElementById('contactPhone').value.trim(), message: document.getElementById('contactMessage').value.trim(), consent: document.getElementById('contactConsent').checked, _subject: 'New Contact Inquiry - WebSolutionsSA', _replyto: document.getElementById('contactEmail').value.trim(), form_type: 'contact' }; fetch(CONTACT_FORMSPREE_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(formData) }).then(response => { if (response.ok) { feedbackEl.className = 'form-feedback success'; feedbackEl.textContent = 'Message sent successfully! We will get back to you as soon as possible.'; feedbackEl.style.display = 'block'; document.getElementById('contactForm').reset(); } else { throw new Error('Form submission failed'); } }).catch(error => { feedbackEl.className = 'form-feedback error'; feedbackEl.textContent = 'Oops! Something went wrong. Please try again or contact us directly via WhatsApp or phone.'; feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Send a Message'; }); }
-        
-        var businessHours = {1: { open: '08:00', close: '17:00', day: 'Monday' },2: { open: '08:00', close: '17:00', day: 'Tuesday' },3: { open: '08:00', close: '17:00', day: 'Wednesday' },4: { open: '08:00', close: '17:00', day: 'Thursday' },5: { open: '08:00', close: '16:00', day: 'Friday' },6: { open: '09:00', close: '13:00', day: 'Saturday' },0: { open: null, close: null, day: 'Sunday', closed: true }};
-        function getSASTTime() { let now = new Date(); let utc = now.getTime() + (now.getTimezoneOffset() * 60000); return new Date(utc + 2 * 60 * 60000); }
-        function updateBusinessStatus() { let saTime = getSASTTime(); let day = saTime.getDay(); let hours = saTime.getHours(); let minutes = saTime.getMinutes(); let currentMinutes = hours * 60 + minutes; let todaySchedule = businessHours[day]; let statusDot = document.getElementById('statusDot'); let statusText = document.getElementById('statusText'); let statusTime = document.getElementById('statusTime'); let timeStr = saTime.toLocaleTimeString('en-ZA', { hour: '2-digit', minute: '2-digit', timeZone: 'Africa/Johannesburg' }); let dayStr = todaySchedule.day; let allRows = document.querySelectorAll('.schedule-table tbody tr'); allRows.forEach(r => r.classList.remove('today-row')); let dayRowMap = { 0: 'row-sun', 1: 'row-mon', 2: 'row-tue', 3: 'row-wed', 4: 'row-thu', 5: 'row-fri', 6: 'row-sat' }; let todayRow = document.getElementById(dayRowMap[day]); if (todayRow) todayRow.classList.add('today-row'); if (todaySchedule.closed) { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (We are closed on Sundays)'; } else { let openParts = todaySchedule.open.split(':'); let closeParts = todaySchedule.close.split(':'); let openMinutes = parseInt(openParts[0]) * 60 + parseInt(openParts[1]); let closeMinutes = parseInt(closeParts[0]) * 60 + parseInt(closeParts[1]); if (currentMinutes >= openMinutes && currentMinutes < closeMinutes) { statusDot.className = 'status-dot open'; statusText.textContent = 'Currently Open'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Open until ' + todaySchedule.close + ')'; } else if (currentMinutes < openMinutes) { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens at ' + todaySchedule.open + ' today)'; } else { statusDot.className = 'status-dot closed'; statusText.textContent = 'Currently Closed'; let nextDay = (day + 1) % 7; let nextSchedule = businessHours[nextDay]; if (nextSchedule.closed) nextDay = (nextDay + 1) % 7; nextSchedule = businessHours[nextDay]; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens ' + nextSchedule.day + ' at ' + nextSchedule.open + ')'; } } }
-        updateBusinessStatus(); setInterval(updateBusinessStatus, 60000);
-        function acceptCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage.setItem('cookiesAccepted', 'true'); }
-        function declineCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage.setItem('cookiesAccepted', 'false'); }
+
+        function submitContactForm(event) { event.preventDefault(); let feedbackEl = document.getElementById(
+            'contactFeedback'); let submitBtn = event.target.querySelector('button[type="submit"]'); submitBtn.disabled =
+            true; submitBtn.textContent = 'Sending...'; feedbackEl.className = 'form-feedback'; feedbackEl.style.display =
+            'none'; let formData = { name: document.getElementById('contactName').value.trim(), email: document
+                .getElementById('contactEmail').value.trim(), phone: document.getElementById('contactPhone').value
+                .trim(), message: document.getElementById('contactMessage').value.trim(), consent: document
+                .getElementById('contactConsent').checked, _subject: 'New Contact Inquiry - WebSolutionsSA',
+            _replyto: document.getElementById('contactEmail').value.trim(), form_type: 'contact' }; fetch(
+            CONTACT_FORMSPREE_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept':
+                    'application/json' }, body: JSON.stringify(formData) }).then(response => { if (response.ok) {
+                feedbackEl.className = 'form-feedback success'; feedbackEl.textContent =
+                    'Message sent successfully! We will get back to you as soon as possible.';
+                feedbackEl.style.display = 'block'; document.getElementById('contactForm').reset(); } else { throw new
+                    Error('Form submission failed'); } }).catch(error => { feedbackEl.className =
+                'form-feedback error'; feedbackEl.textContent =
+                'Oops! Something went wrong. Please try again or contact us directly via WhatsApp or phone.';
+            feedbackEl.style.display = 'block'; console.error(error); }).finally(() => { submitBtn.disabled = false;
+                submitBtn.textContent = 'Send a Message'; }); }
+
+        var businessHours = { 1: { open: '08:00', close: '17:00', day: 'Monday' }, 2: { open: '08:00', close: '17:00',
+                day: 'Tuesday' }, 3: { open: '08:00', close: '17:00', day: 'Wednesday' }, 4: { open: '08:00',
+                close: '17:00', day: 'Thursday' }, 5: { open: '08:00', close: '16:00', day: 'Friday' }, 6: { open: '09:00',
+                close: '13:00', day: 'Saturday' }, 0: { open: null, close: null, day: 'Sunday', closed: true } };
+
+        function getSASTTime() { let now = new Date(); let utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            return new Date(utc + 2 * 60 * 60000); }
+
+        function updateBusinessStatus() { let saTime = getSASTTime(); let day = saTime.getDay(); let hours = saTime
+            .getHours(); let minutes = saTime.getMinutes(); let currentMinutes = hours * 60 + minutes; let todaySchedule =
+            businessHours[day]; let statusDot = document.getElementById('statusDot'); let statusText = document
+            .getElementById('statusText'); let statusTime = document.getElementById('statusTime'); let timeStr = saTime
+            .toLocaleTimeString('en-ZA', { hour: '2-digit', minute: '2-digit', timeZone: 'Africa/Johannesburg' });
+            let dayStr = todaySchedule.day; let allRows = document.querySelectorAll('.schedule-table tbody tr');
+            allRows.forEach(r => r.classList.remove('today-row')); let dayRowMap = { 0: 'row-sun', 1: 'row-mon', 2: 'row-tue',
+                3: 'row-wed', 4: 'row-thu', 5: 'row-fri', 6: 'row-sat' }; let todayRow = document.getElementById(
+                dayRowMap[day]); if (todayRow) todayRow.classList.add('today-row'); if (todaySchedule.closed) { statusDot
+                    .className = 'status-dot closed'; statusText.textContent = 'Currently Closed';
+                statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (We are closed on Sundays)'; } else { let
+                openParts = todaySchedule.open.split(':'); let closeParts = todaySchedule.close.split(':'); let
+                openMinutes = parseInt(openParts[0]) * 60 + parseInt(openParts[1]); let closeMinutes = parseInt(
+                    closeParts[0]) * 60 + parseInt(closeParts[1]); if (currentMinutes >= openMinutes && currentMinutes <
+                    closeMinutes) { statusDot.className = 'status-dot open'; statusText.textContent =
+                    'Currently Open'; statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Open until ' +
+                    todaySchedule.close + ')'; } else if (currentMinutes < openMinutes) { statusDot.className =
+                    'status-dot closed'; statusText.textContent = 'Currently Closed';
+                statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens at ' + todaySchedule.open +
+                    ' today)'; } else { statusDot.className = 'status-dot closed'; statusText.textContent =
+                    'Currently Closed'; let nextDay = (day + 1) % 7; let nextSchedule = businessHours[nextDay]; if (
+                        nextSchedule.closed) nextDay = (nextDay + 1) % 7; nextSchedule = businessHours[nextDay];
+                statusTime.textContent = dayStr + ' — ' + timeStr + ' SAST (Opens ' + nextSchedule.day + ' at ' +
+                    nextSchedule.open + ')'; } } }
+        updateBusinessStatus();
+        setInterval(updateBusinessStatus, 60000);
+
+        function acceptCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage
+                .setItem('cookiesAccepted', 'true'); }
+
+        function declineCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage
+                .setItem('cookiesAccepted', 'false'); }
         if (!localStorage.getItem('cookiesAccepted')) document.getElementById('cookieBanner').classList.add('show');
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-        let sections = document.querySelectorAll('section[id]'); let navLinks = document.querySelectorAll('nav a');
-        window.addEventListener('scroll', function() { let scrollPos = window.scrollY + 100; sections.forEach(section => { let top = section.offsetTop, height = section.offsetHeight, id = section.getAttribute('id'); if (scrollPos >= top && scrollPos < top + height) { navLinks.forEach(link => { link.classList.remove('active'); if (link.getAttribute('href') === '#' + id) link.classList.add('active'); }); } }); });
+        let sections = document.querySelectorAll('section[id]');
+        let navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', function() { let scrollPos = window.scrollY + 100; sections.forEach(section => {
+                let top = section.offsetTop,
+                    height = section.offsetHeight,
+                    id = section.getAttribute('id'); if (scrollPos >= top && scrollPos < top + height) { navLinks
+                        .forEach(link => { link.classList.remove('active'); if (link.getAttribute('href') === '#' +
+                            id) link.classList.add('active'); }); } }); });
     </script>
 </body>
 </html>
