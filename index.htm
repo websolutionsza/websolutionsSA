@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="websolutionssa - Smart Web Solutions for Modern Businesses. Professional website design and development services.">
-    <meta name="theme-color" content="#0D4A7A">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="websolutionssa - Smart Web Solutions for Modern Businesses. Professional website design and development services." />
+    <meta name="theme-color" content="#0D4A7A" />
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="websolutionssa - Web Solutions">
-    <meta property="og:description" content="Professional website design and development for local businesses">
-    <meta property="og:type" content="business.business">
-    <meta property="og:url" content="https://websolutionssa.com">
+    <meta property="og:title" content="websolutionssa - Web Solutions" />
+    <meta property="og:description" content="Professional website design and development for local businesses" />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:url" content="https://websolutionssa.com" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "websolutionssa",
-        "url": "https://websolutionssa.com",
-        "logo": "https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.png",
-        "description": "Professional web design and development services",
-        "telephone": "+27662914212",
-        "email": "websolutionssa0@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "ZA"
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "websolutionssa",
+            "url": "https://websolutionssa.com",
+            "logo": "https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.png",
+            "description": "Professional web design and development services",
+            "telephone": "+27662914212",
+            "email": "websolutionssa0@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "ZA"
+            }
         }
-    }
     </script>
 
     <title>websolutionssa - Smart Web Solutions for Modern Businesses</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- Font Awesome 6 (free icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -61,9 +61,9 @@
             --font-secondary: 'Open Sans', sans-serif;
 
             --transition: all 0.3s ease;
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
-            --shadow-lg: 0 12px 24px rgba(0,0,0,0.2);
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+            --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
 
         * {
@@ -523,6 +523,13 @@
             z-index: 2;
             box-shadow: var(--shadow-sm);
             backdrop-filter: blur(2px);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .popular-badge i {
+            font-size: 0.7rem;
         }
 
         .pricing-card-header {
@@ -620,14 +627,23 @@
             }
         }
 
-        /* ========== ABOUT SECTION ========== */
+        /* ========== ABOUT SECTION — FULL WIDTH ========== */
         .about {
             background-color: var(--color-accent);
         }
 
+        .about .container {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
         .about-content {
-            max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
+            background-color: var(--color-accent);
+            padding: 50px 60px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            box-sizing: border-box;
         }
 
         .about h2 {
@@ -641,12 +657,19 @@
             line-height: 1.8;
             color: var(--color-text);
             margin-bottom: 20px;
-            text-align: justify;
+            text-align: left;
+            word-wrap: break-word;
+            hyphens: auto;
         }
 
         /* ========== PORTFOLIO SECTION ========== */
         .portfolio {
             background-color: var(--color-neutral);
+        }
+
+        .portfolio .container {
+            max-width: 100%;
+            padding: 0 30px;
         }
 
         .portfolio-grid {
@@ -716,12 +739,15 @@
             background-color: var(--color-accent);
         }
 
+        .reviews .container {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
         .reviews-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
         .review-form {
@@ -889,9 +915,13 @@
             background-color: var(--color-neutral);
         }
 
+        .contact .container {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
         .contact-container {
-            max-width: 900px;
-            margin: 0 auto;
+            width: 100%;
         }
 
         .contact-info {
@@ -1001,9 +1031,13 @@
             background-color: var(--color-accent);
         }
 
+        .status .container {
+            max-width: 100%;
+            padding: 0 30px;
+        }
+
         .status-container {
-            max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
         }
 
         .status-display {
@@ -1080,18 +1114,24 @@
             background-color: #F9F9F9;
         }
 
-        /* ========== TERMS SECTION ========== */
+        /* ========== TERMS SECTION — FULL WIDTH ========== */
         .terms {
             background-color: var(--color-neutral);
+            padding: 80px 0;
+        }
+
+        .terms .container {
+            max-width: 100%;
+            padding: 0 30px;
         }
 
         .terms-content {
-            max-width: 900px;
-            margin: 0 auto;
+            width: 100%;
             background-color: var(--color-accent);
-            padding: 40px;
+            padding: 50px 60px;
             border-radius: 8px;
             box-shadow: var(--shadow-sm);
+            box-sizing: border-box;
         }
 
         .terms-content h2 {
@@ -1102,6 +1142,7 @@
 
         .terms-content ol {
             margin-left: 20px;
+            padding-right: 10px;
         }
 
         .terms-content li {
@@ -1497,6 +1538,28 @@
             }
         }
 
+        /* ========== RESPONSIVE TWEAKS ========== */
+        @media (max-width: 992px) {
+            .about .container,
+            .portfolio .container,
+            .reviews .container,
+            .contact .container,
+            .status .container,
+            .terms .container {
+                padding: 0 20px;
+            }
+            .about-content,
+            .terms-content {
+                padding: 40px 35px;
+            }
+            .contact-info,
+            .contact-form,
+            .status-display,
+            .schedule-table {
+                padding: 30px;
+            }
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -1508,8 +1571,27 @@
                 font-size: 1.3rem;
             }
             section {
-                padding: 50px 20px;
+                padding: 50px 0;
             }
+            .about .container,
+            .portfolio .container,
+            .reviews .container,
+            .contact .container,
+            .status .container,
+            .terms .container {
+                padding: 0 16px;
+            }
+            .about-content,
+            .terms-content {
+                padding: 30px 20px;
+            }
+            .contact-info,
+            .contact-form,
+            .status-display,
+            .schedule-table {
+                padding: 25px 20px;
+            }
+
             .company-name.mobile-hidden {
                 display: none;
             }
@@ -1601,6 +1683,63 @@
             .cookie-btn {
                 width: 100%;
             }
+
+            .about p {
+                font-size: 1rem;
+                line-height: 1.7;
+                text-align: left;
+            }
+
+            .terms-content ol {
+                margin-left: 10px;
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about .container,
+            .portfolio .container,
+            .reviews .container,
+            .contact .container,
+            .status .container,
+            .terms .container {
+                padding: 0 12px;
+            }
+            .about-content,
+            .terms-content {
+                padding: 24px 16px;
+            }
+            .contact-info,
+            .contact-form,
+            .status-display,
+            .schedule-table {
+                padding: 20px 16px;
+            }
+            .about p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            .terms-content ol {
+                margin-left: 6px;
+            }
+            .terms-content li {
+                margin-bottom: 16px;
+                line-height: 1.7;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .about-content,
+            .terms-content {
+                padding: 40px 48px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .about-content,
+            .terms-content {
+                padding: 50px 70px;
+            }
         }
     </style>
 </head>
@@ -1609,7 +1748,7 @@
         <div class="header-content">
             <div class="logo-section">
                 <div class="logo-icon">
-                    <img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA W Logo" width="40" height="40" style="object-fit:contain;">
+                    <img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA W Logo" width="40" height="40" style="object-fit:contain;" />
                 </div>
                 <span class="company-name">websolutionssa</span>
             </div>
@@ -1632,7 +1771,7 @@
 
     <section class="hero" id="home">
         <div class="hero-logo">
-            <img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.png" alt="WebSolutionsSA Logo" style="width:100%; height:auto;">
+            <img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.png" alt="WebSolutionsSA Logo" style="width:100%; height:auto;" />
         </div>
         <h1>websolutionssa</h1>
         <p class="hero-tagline">Smart Web Solutions for Modern Businesses</p>
@@ -1661,41 +1800,233 @@
     </section>
 
     <section class="pricing" id="pricing">
-        <div class="container"><div class="section-header"><h2>Simple, Transparent Pricing</h2><p>Choose the perfect package for your business goals.</p></div>
+        <div class="container">
+            <div class="section-header"><h2>Simple, Transparent Pricing</h2><p>Choose the perfect package for your business goals.</p></div>
             <div class="pricing-grid">
-                <div class="pricing-card"><div class="pricing-card-header"><h3>Starter</h3><div class="pricing-price"><span class="price-zar">R500</span><span class="price-usd">≈ $30 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>1-page website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Starter%20Plan%20(R500%20for%20a%201-page%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Get Started</a></div></div>
-                <div class="pricing-card popular"><div class="popular-badge">⭐ Most Popular</div><div class="pricing-card-header"><h3>Business</h3><div class="pricing-price"><span class="price-zar">R1200</span><span class="price-usd">≈ $65 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Multi-page + mobile optimization</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Business%20Plan%20(R1200%20for%20multi-page%20%2B%20mobile%20optimization).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-primary">Choose Plan</a></div></div>
-                <div class="pricing-card"><div class="pricing-card-header"><h3>Premium</h3><div class="pricing-price"><span class="price-zar">R2500</span><span class="price-usd">≈ $135 USD</span></div></div><div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Full custom business website</span></div></div><div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Premium%20Plan%20(R2500%20for%20full%20custom%20business%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Contact Sales</a></div></div>
-            </div></div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header"><h3>Starter</h3><div class="pricing-price"><span class="price-zar">R500</span><span class="price-usd">≈ $30 USD</span></div></div>
+                    <div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>1-page website</span></div></div>
+                    <div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Starter%20Plan%20(R500%20for%20a%201-page%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Get Started</a></div>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge"><i class="fas fa-star"></i> Most Popular</div>
+                    <div class="pricing-card-header"><h3>Business</h3><div class="pricing-price"><span class="price-zar">R1200</span><span class="price-usd">≈ $65 USD</span></div></div>
+                    <div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Multi-page + mobile optimization</span></div></div>
+                    <div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Business%20Plan%20(R1200%20for%20multi-page%20%2B%20mobile%20optimization).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-primary">Choose Plan</a></div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header"><h3>Premium</h3><div class="pricing-price"><span class="price-zar">R2500</span><span class="price-usd">≈ $135 USD</span></div></div>
+                    <div class="pricing-features"><div class="feature-item"><i class="fas fa-check-circle"></i> <span>Full custom business website</span></div></div>
+                    <div class="pricing-action"><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I'm%20interested%20in%20the%20Premium%20Plan%20(R2500%20for%20full%20custom%20business%20website).%20Could%20you%20provide%20more%20details%3F" target="_blank" rel="noopener" class="btn btn-secondary">Contact Sales</a></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="about" id="about"><div class="container"><div class="about-content"><h2>About WebSolutionsSA</h2><p>WebSolutionsSA is a South African-based web design and development company dedicated to helping small and medium businesses establish a strong online presence. We specialize in creating beautiful, functional, and affordable websites that drive results.</p><p>Our mission is simple: to provide high-quality digital solutions that empower businesses to compete and thrive in the modern marketplace. Whether you need a simple landing page, a full e-commerce platform, or ongoing website maintenance, we've got you covered.</p><p>We believe every business deserves a professional website, regardless of budget. That's why we offer competitive pricing without compromising on quality.</p></div></div></section>
+    <!-- ========== ABOUT SECTION — FULL WIDTH ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About WebSolutionsSA</h2>
+                <p>WebSolutionsSA is a South African-based web design and development company dedicated to helping small and medium businesses establish a strong online presence. We specialize in creating beautiful, functional, and affordable websites that drive results.</p>
+                <p>Our mission is simple: to provide high-quality digital solutions that empower businesses to compete and thrive in the modern marketplace. Whether you need a simple landing page, a full e-commerce platform, or ongoing website maintenance, we've got you covered.</p>
+                <p>We believe every business deserves a professional website, regardless of budget. That's why we offer competitive pricing without compromising on quality.</p>
+            </div>
+        </div>
+    </section>
 
-    <section class="portfolio" id="portfolio"><div class="container"><div class="section-header"><h2>Our Portfolio</h2><p>Take a look at some of our recent work and templates.</p></div><div class="portfolio-grid">
-                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg');"></div><div class="portfolio-content"><h3>Business Website Template</h3><p>A clean, modern business website design perfect for small to medium enterprises.</p><span class="view-btn">View Project</span></div></div>
-                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg');"></div><div class="portfolio-content"><h3>Professional Landing Page</h3><p>A high-converting landing page design with clear call-to-action elements.</p><span class="view-btn">View Project</span></div></div>
-                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg')"><div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg');"></div><div class="portfolio-content"><h3>Modern Web Design</h3><p>A stylish, contemporary web layout suitable for various industries and brands.</p><span class="view-btn">View Project</span></div></div>
-            </div></div></section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header"><h2>Our Portfolio</h2><p>Take a look at some of our recent work and templates.</p></div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg')">
+                    <div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Business%20Website%20Template.jpeg');"></div>
+                    <div class="portfolio-content"><h3>Business Website Template</h3><p>A clean, modern business website design perfect for small to medium enterprises.</p><span class="view-btn">View Project</span></div>
+                </div>
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg')">
+                    <div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Professional%20Landing%20Page.jpeg');"></div>
+                    <div class="portfolio-content"><h3>Professional Landing Page</h3><p>A high-converting landing page design with clear call-to-action elements.</p><span class="view-btn">View Project</span></div>
+                </div>
+                <div class="portfolio-item" onclick="openPreviewModal('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg')">
+                    <div class="portfolio-image" style="background-image: url('https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/Modern%20Web%20Design.jpeg');"></div>
+                    <div class="portfolio-content"><h3>Modern Web Design</h3><p>A stylish, contemporary web layout suitable for various industries and brands.</p><span class="view-btn">View Project</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="preview-modal" id="previewModal" onclick="closePreviewModal(event)">
         <div class="preview-container" onclick="event.stopPropagation()">
             <button class="preview-close" onclick="closePreviewModal()">&times;</button>
-            <img class="preview-image" id="previewImage" src="" alt="Website preview">
+            <img class="preview-image" id="previewImage" src="" alt="Website preview" />
         </div>
     </div>
 
-    <section class="reviews" id="reviews"><div class="container"><div class="section-header"><h2>Leave a Review</h2><p>We value your feedback! Share your experience with us.</p></div><div class="reviews-container"><div class="review-form"><h3>Submit Your Review</h3><form id="reviewForm" onsubmit="submitReview(event)"><div class="form-group"><label for="reviewName">Your Name *</label><input type="text" id="reviewName" name="name" placeholder="Enter your full name" required></div><div class="form-group"><label for="reviewEmail">Your Email *</label><input type="email" id="reviewEmail" name="email" placeholder="Enter your email address" required></div><label style="font-weight:500;color:var(--color-text);display:block;margin-bottom:8px;">Your Rating *</label><div class="star-rating" id="starRating"><input type="radio" name="rating" value="5" id="star5"><label for="star5" class="star" onclick="setRating(5)">&#9733;</label><input type="radio" name="rating" value="4" id="star4"><label for="star4" class="star" onclick="setRating(4)">&#9733;</label><input type="radio" name="rating" value="3" id="star3"><label for="star3" class="star" onclick="setRating(3)">&#9733;</label><input type="radio" name="rating" value="2" id="star2"><label for="star2" class="star" onclick="setRating(2)">&#9733;</label><input type="radio" name="rating" value="1" id="star1"><label for="star1" class="star" onclick="setRating(1)">&#9733;</label></div><div class="form-group"><label for="reviewComment">Your Review *</label><textarea id="reviewComment" name="comment" placeholder="Tell us about your experience..." required></textarea></div><div class="checkbox-group"><input type="checkbox" id="reviewConsent" name="consent" required><label for="reviewConsent">I consent to having my review published on this website. *</label></div><button type="submit" class="btn btn-primary" style="width:100%;">Submit Review</button><div class="form-feedback" id="reviewFeedback"></div></form><div class="moderation-note"><i class="fas fa-lock"></i> <strong>Review Moderation:</strong> All reviews are manually reviewed before being published. Your review will not appear immediately.</div></div><div class="reviews-list" id="reviewsList"><div class="review-item"><div class="review-header"><span class="review-name">Thabo M.</span><span class="review-date">March 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Excellent service! My business website was delivered quickly and looks amazing. Highly recommended!</p></div><div class="review-item"><div class="review-header"><span class="review-name">Lerato K.</span><span class="review-date">February 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Professional and affordable. WebSolutionsSA built exactly what I needed for my startup.</p></div><div class="review-item"><div class="review-header"><span class="review-name">Sipho D.</span><span class="review-date">January 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Great communication throughout the project. The final website exceeded my expectations!</p></div></div></div></div></section>
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header"><h2>Leave a Review</h2><p>We value your feedback! Share your experience with us.</p></div>
+            <div class="reviews-container">
+                <div class="review-form">
+                    <h3>Submit Your Review</h3>
+                    <form id="reviewForm" onsubmit="submitReview(event)">
+                        <div class="form-group"><label for="reviewName">Your Name *</label><input type="text" id="reviewName" name="name" placeholder="Enter your full name" required /></div>
+                        <div class="form-group"><label for="reviewEmail">Your Email *</label><input type="email" id="reviewEmail" name="email" placeholder="Enter your email address" required /></div>
+                        <label style="font-weight:500;color:var(--color-text);display:block;margin-bottom:8px;">Your Rating *</label>
+                        <div class="star-rating" id="starRating">
+                            <input type="radio" name="rating" value="5" id="star5" /><label for="star5" class="star" onclick="setRating(5)">&#9733;</label>
+                            <input type="radio" name="rating" value="4" id="star4" /><label for="star4" class="star" onclick="setRating(4)">&#9733;</label>
+                            <input type="radio" name="rating" value="3" id="star3" /><label for="star3" class="star" onclick="setRating(3)">&#9733;</label>
+                            <input type="radio" name="rating" value="2" id="star2" /><label for="star2" class="star" onclick="setRating(2)">&#9733;</label>
+                            <input type="radio" name="rating" value="1" id="star1" /><label for="star1" class="star" onclick="setRating(1)">&#9733;</label>
+                        </div>
+                        <div class="form-group"><label for="reviewComment">Your Review *</label><textarea id="reviewComment" name="comment" placeholder="Tell us about your experience..." required></textarea></div>
+                        <div class="checkbox-group"><input type="checkbox" id="reviewConsent" name="consent" required /><label for="reviewConsent">I consent to having my review published on this website. *</label></div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Review</button>
+                        <div class="form-feedback" id="reviewFeedback"></div>
+                    </form>
+                    <div class="moderation-note"><i class="fas fa-lock"></i> <strong>Review Moderation:</strong> All reviews are manually reviewed before being published. Your review will not appear immediately.</div>
+                </div>
+                <div class="reviews-list" id="reviewsList">
+                    <div class="review-item"><div class="review-header"><span class="review-name">Thabo M.</span><span class="review-date">March 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Excellent service! My business website was delivered quickly and looks amazing. Highly recommended!</p></div>
+                    <div class="review-item"><div class="review-header"><span class="review-name">Lerato K.</span><span class="review-date">February 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Professional and affordable. WebSolutionsSA built exactly what I needed for my startup.</p></div>
+                    <div class="review-item"><div class="review-header"><span class="review-name">Sipho D.</span><span class="review-date">January 2026</span></div><div class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">Great communication throughout the project. The final website exceeded my expectations!</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="contact" id="contact"><div class="container"><div class="section-header"><h2>Contact Us</h2><p>Get in touch — we'd love to hear from you!</p></div><div class="contact-container"><div class="contact-info"><h3>Reach Out to Us</h3><div class="phone-display">+27 66 291 4212</div><span class="phone-label"><i class="fas fa-phone-alt"></i> Call only (for inquiries)</span><p class="contact-note">Available during business hours for phone inquiries.</p><div class="contact-buttons"><a href="tel:+27662914212" class="btn btn-primary call-btn"><i class="fas fa-phone-alt"></i> Call Now</a><a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I%20would%20like%20to%20make%20an%20inquiry%20about%20a%20website." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a></div><a href="mailto:websolutionssa0@gmail.com" class="email-link"><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</a></div><div class="contact-form"><h3>Send a Message</h3><p style="color:var(--color-muted);margin-bottom:20px;">Fill out the form below and we'll get back to you as soon as possible.</p><form id="contactForm" onsubmit="submitContactForm(event)"><div class="form-row"><div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" name="name" placeholder="Enter your full name" required></div><div class="form-group"><label for="contactEmail">Your Email *</label><input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required></div></div><div class="form-row"><div class="form-group"><label for="contactPhone">Phone Number</label><input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number"></div></div><div class="form-row full"><div class="form-group"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="message" placeholder="Tell us about your project or inquiry..." required></textarea></div></div><div class="checkbox-group"><input type="checkbox" id="contactConsent" name="consent" required><label for="contactConsent">I consent to being contacted regarding my inquiry. *</label></div><button type="submit" class="btn btn-primary" style="width:100%;">Send a Message</button><div class="form-feedback" id="contactFeedback"></div></form></div></div></div></section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header"><h2>Contact Us</h2><p>Get in touch — we'd love to hear from you!</p></div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Reach Out to Us</h3>
+                    <div class="phone-display">+27 66 291 4212</div>
+                    <span class="phone-label"><i class="fas fa-phone-alt"></i> Call only (for inquiries)</span>
+                    <p class="contact-note">Available during business hours for phone inquiries.</p>
+                    <div class="contact-buttons">
+                        <a href="tel:+27662914212" class="btn btn-primary call-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+                        <a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I%20would%20like%20to%20make%20an%20inquiry%20about%20a%20website." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                    <a href="mailto:websolutionssa0@gmail.com" class="email-link"><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</a>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <p style="color:var(--color-muted);margin-bottom:20px;">Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contactForm" onsubmit="submitContactForm(event)">
+                        <div class="form-row">
+                            <div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" name="name" placeholder="Enter your full name" required /></div>
+                            <div class="form-group"><label for="contactEmail">Your Email *</label><input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required /></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="contactPhone">Phone Number</label><input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number" /></div>
+                        </div>
+                        <div class="form-row full">
+                            <div class="form-group"><label for="contactMessage">Your Message *</label><textarea id="contactMessage" name="message" placeholder="Tell us about your project or inquiry..." required></textarea></div>
+                        </div>
+                        <div class="checkbox-group"><input type="checkbox" id="contactConsent" name="consent" required /><label for="contactConsent">I consent to being contacted regarding my inquiry. *</label></div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Send a Message</button>
+                        <div class="form-feedback" id="contactFeedback"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="status" id="status"><div class="container"><div class="section-header"><h2>Business Hours</h2><p>Check if we're currently available.</p></div><div class="status-container"><div class="status-display"><div class="status-indicator"><span class="status-dot" id="statusDot"></span><span id="statusText">Checking...</span></div><p class="status-time" id="statusTime"></p></div><div class="schedule-table"><table><thead><tr><th>Day</th><th>Hours</th></tr></thead><tbody><tr id="row-mon"><td>Monday</td><td>08:00 – 17:00</td></tr><tr id="row-tue"><td>Tuesday</td><td>08:00 – 17:00</td></tr><tr id="row-wed"><td>Wednesday</td><td>08:00 – 17:00</td></tr><tr id="row-thu"><td>Thursday</td><td>08:00 – 17:00</td></tr><tr id="row-fri"><td>Friday</td><td>08:00 – 16:00</td></tr><tr id="row-sat"><td>Saturday</td><td>09:00 – 13:00</td></tr><tr id="row-sun"><td>Sunday</td><td>Closed</td></tr></tbody></table></div></div></div></section>
+    <section class="status" id="status">
+        <div class="container">
+            <div class="section-header"><h2>Business Hours</h2><p>Check if we're currently available.</p></div>
+            <div class="status-container">
+                <div class="status-display">
+                    <div class="status-indicator"><span class="status-dot" id="statusDot"></span><span id="statusText">Checking...</span></div>
+                    <p class="status-time" id="statusTime"></p>
+                </div>
+                <div class="schedule-table">
+                    <table>
+                        <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+                        <tbody>
+                            <tr id="row-mon"><td>Monday</td><td>08:00 – 17:00</td></tr>
+                            <tr id="row-tue"><td>Tuesday</td><td>08:00 – 17:00</td></tr>
+                            <tr id="row-wed"><td>Wednesday</td><td>08:00 – 17:00</td></tr>
+                            <tr id="row-thu"><td>Thursday</td><td>08:00 – 17:00</td></tr>
+                            <tr id="row-fri"><td>Friday</td><td>08:00 – 16:00</td></tr>
+                            <tr id="row-sat"><td>Saturday</td><td>09:00 – 13:00</td></tr>
+                            <tr id="row-sun"><td>Sunday</td><td>Closed</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="terms" id="terms"><div class="container"><div class="terms-content"><h2>Terms and Conditions</h2><ol><li><h4>Introduction</h4>By using the services of WebSolutionsSA, you agree to the terms and conditions outlined below. These terms are legally binding and apply to all clients.</li><li><h4>Services</h4>WebSolutionsSA provides website design and related digital services based on client requirements. All work will be discussed and agreed upon before development begins.</li><li><h4>Payment Policy (STRICT)</h4>Full payment or agreed deposit must be made before any website is delivered or published. No website, files, or access will be given to the client until proof of payment is received and the payment has fully reflected. Any delays in payment will result in delays in project completion or delivery.</li><li><h4>Proof of Payment</h4>Clients must send valid proof of payment. WebSolutionsSA reserves the right to wait for bank confirmation before continuing or releasing any work.</li><li><h4>Ownership &amp; Intellectual Property</h4>All websites, designs, and code remain the property of WebSolutionsSA until full payment is received. Once payment is complete, ownership is transferred to the client unless otherwise agreed.</li><li><h4>Unauthorized Use / Theft</h4>Any attempt to copy, steal, reuse, or distribute website designs, code, or content without permission will be considered a violation. WebSolutionsSA reserves the right to take legal action against any individual or business involved in theft or unauthorized use of its work.</li><li><h4>Revisions</h4>Clients are allowed a reasonable number of revisions as agreed at the start of the project. Excessive changes beyond the agreement may result in additional charges.</li><li><h4>Project Delays</h4>Delays caused by the client (late responses, missing content, etc.) may affect delivery time. WebSolutionsSA is not responsible for delays caused by the client.</li><li><h4>Refund Policy</h4>Once work has started, no refunds will be issued. Deposits are non-refundable.</li><li><h4>Communication</h4>All official communication will be done through agreed platforms (e.g., WhatsApp Business, email). Clients are expected to respond within a reasonable time to avoid delays.</li><li><h4>Right to Refuse Service</h4>WebSolutionsSA reserves the right to refuse or cancel service to anyone at any time for valid reasons.</li><li><h4>Agreement</h4>By working with WebSolutionsSA, the client confirms that they have read, understood, and agreed to these terms and conditions.</li></ol></div></div></section>
+    <!-- ========== TERMS & CONDITIONS — FULL WIDTH ========== -->
+    <section class="terms" id="terms">
+        <div class="container">
+            <div class="terms-content">
+                <h2>Terms and Conditions</h2>
+                <ol>
+                    <li><h4>Introduction</h4>By using the services of WebSolutionsSA, you agree to the terms and conditions outlined below. These terms are legally binding and apply to all clients.</li>
+                    <li><h4>Services</h4>WebSolutionsSA provides website design and related digital services based on client requirements. All work will be discussed and agreed upon before development begins.</li>
+                    <li><h4>Payment Policy (STRICT)</h4>Full payment or agreed deposit must be made before any website is delivered or published. No website, files, links, or access will be provided until proof of payment is received and the payment has fully reflected in WebSolutionsSA's account.<br /><br />Once WebSolutionsSA has received valid proof of payment and the payment has been successfully confirmed/reflected, the final website link will be delivered to the client together with an official payment slip/receipt.<br /><br />Any delays in payment confirmation will result in delays in website delivery. WebSolutionsSA is not responsible for delays caused by unpaid or pending payments.</li>
+                    <li><h4>Proof of Payment</h4>Clients must provide valid proof of payment after completing payment. WebSolutionsSA reserves the right to verify payments with the relevant payment provider or bank before releasing any website links, files, or access.</li>
+                    <li><h4>Ownership &amp; Intellectual Property</h4>All websites, designs, and code remain the property of WebSolutionsSA until full payment is received. Once payment is complete, ownership is transferred to the client unless otherwise agreed.</li>
+                    <li><h4>Unauthorized Use / Theft</h4>Any attempt to copy, steal, reuse, or distribute website designs, code, or content without permission will be considered a violation. WebSolutionsSA reserves the right to take legal action against any individual or business involved in theft or unauthorized use of its work.</li>
+                    <li><h4>Revisions</h4>Clients are allowed a reasonable number of revisions as agreed at the start of the project. Excessive changes beyond the agreement may result in additional charges.</li>
+                    <li><h4>Project Delays</h4>Delays caused by the client (late responses, missing content, etc.) may affect delivery time. WebSolutionsSA is not responsible for delays caused by the client.</li>
+                    <li><h4>Refund Policy</h4>Once work has started, no refunds will be issued. Deposits are non-refundable.</li>
+                    <li><h4>Communication</h4>All official communication will be done through agreed platforms (e.g., WhatsApp Business, email). Clients are expected to respond within a reasonable time to avoid delays.</li>
+                    <li><h4>Right to Refuse Service</h4>WebSolutionsSA reserves the right to refuse or cancel service to anyone at any time for valid reasons.</li>
+                    <li><h4>Agreement</h4>By working with WebSolutionsSA, the client confirms that they have read, understood, and agreed to these terms and conditions.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
 
-    <footer><div class="footer-content"><div class="footer-section"><div class="footer-logo"><div class="footer-logo-icon"><img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA Logo" width="40" height="40" style="object-fit:contain;"></div><span style="font-weight:700;font-size:1.1rem;">websolutionssa</span></div><p style="opacity:0.9;font-size:0.9rem;">Smart web solutions for modern businesses. We help you build a strong online presence.</p><div class="social-icons"><a href="https://www.facebook.com/profile.php?id=61590432847744" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/websolutions.sa?igsh=dnVjbmg0ZHc1bjhm&utm_source=qr" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div><div class="footer-section"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div><div class="footer-section"><h4>Contact Info</h4><ul><li><i class="fas fa-phone-alt"></i> +27 66 291 4212</li><li><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</li><li><i class="fas fa-map-marker-alt"></i> South Africa</li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="currentYear"></span> websolutionssa. All rights reserved.</p></div></footer>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon"><img src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/w%20logo.png" alt="WebSolutionsSA Logo" width="40" height="40" style="object-fit:contain;" /></div>
+                    <span style="font-weight:700;font-size:1.1rem;">websolutionssa</span>
+                </div>
+                <p style="opacity:0.9;font-size:0.9rem;">Smart web solutions for modern businesses. We help you build a strong online presence.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61590432847744" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/websolutions.sa?igsh=dnVjbmg0ZHc1bjhm&utm_source=qr" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +27 66 291 4212</li>
+                    <li><i class="fas fa-envelope"></i> websolutionssa0@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> South Africa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> websolutionssa. All rights reserved.</p></div>
+    </footer>
 
     <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">&#8593;</button>
-    <div class="cookie-banner" id="cookieBanner"><span class="cookie-text">This website uses cookies to ensure you get the best experience. <a href="#terms">Learn more</a></span><div class="cookie-actions"><button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button><button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button></div></div>
+    <div class="cookie-banner" id="cookieBanner">
+        <span class="cookie-text">This website uses cookies to ensure you get the best experience. <a href="#terms">Learn more</a></span>
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accept</button>
+            <button class="cookie-btn cookie-decline" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
 
     <script>
         function toggleMenu() { document.getElementById('nav-menu').classList.toggle('show'); }
