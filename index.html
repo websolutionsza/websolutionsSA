@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="description" content="WebSolutionsSA is currently undergoing scheduled system updates. Full services will be back online shortly." />
+    <meta name="theme-color" content="#0D4A7A" />
+    <meta property="og:title" content="WebSolutionsSA — System Update in Progress" />
+    <meta property="og:description" content="We are currently undergoing scheduled system updates to improve your experience." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://websolutionssa.com" />
+
+    <title>WebSolutionsSA — System Update in Progress</title>
+
+    <!-- Favicon (inline SVG, no external request) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230D4A7A' width='100' height='100' rx='22'/><text x='50' y='69' font-family='Arial,sans-serif' font-size='62' font-weight='700' fill='white' text-anchor='middle'>W</text></svg>" />
+
+    <!-- Google Fonts (matches existing brand: Montserrat + Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ============ DESIGN TOKENS (matches existing brand) ============ */
+        :root {
+            --color-primary: #0D4A7A;
+            --color-primary-light: #1B5E8F;
+            --color-primary-dark: #092F52;
+            --color-accent: #FFFFFF;
+            --color-text: #2D3748;
+            --color-muted: #718096;
+            --color-border: #E2E8F0;
+            --color-bg-soft: #F7FAFC;
+
+            --font-primary: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            --font-secondary: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+            --shadow-card: 0 20px 60px rgba(13, 74, 122, 0.10), 0 4px 16px rgba(13, 74, 122, 0.06);
+            --shadow-hover: 0 12px 28px rgba(13, 74, 122, 0.28);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { -webkit-text-size-adjust: 100%; }
+
+        body {
+            font-family: var(--font-secondary);
+            color: var(--color-text);
+            line-height: 1.6;
+            background-color: #FFFFFF;
+            /* Very subtle ambient gradient — keeps it "minimal white" but never flat */
+            background-image:
+                radial-gradient(circle at 50% 0%, rgba(13, 74, 122, 0.045) 0%, transparent 55%),
+                radial-gradient(circle at 100% 100%, rgba(27, 94, 143, 0.035) 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(13, 74, 122, 0.025) 0%, transparent 50%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            overflow-x: hidden;
+        }
+
+        /* ============ TOP PROGRESS BAR ============ */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                var(--color-primary) 30%,
+                var(--color-primary-light) 50%,
+                var(--color-primary) 70%,
+                transparent 100%);
+            background-size: 200% 100%;
+            animation: progressFlow 2.4s ease-in-out infinite;
+            z-index: 100;
+            box-shadow: 0 0 12px rgba(13, 74, 122, 0.35);
+        }
+
+        @keyframes progressFlow {
+            0%   { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* ============ MAIN CONTAINER ============ */
+        .maintenance-container {
+            width: 100%;
+            max-width: 620px;
+            text-align: center;
+            animation: fadeInUp 0.7s ease both;
+        }
+
+        .maintenance-card {
+            background: var(--color-accent);
+            border: 1px solid var(--color-border);
+            border-radius: 24px;
+            padding: 56px 48px 48px;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .maintenance-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 50%, var(--color-primary) 100%);
+        }
+
+        /* ============ LOGO ============ */
+        .logo-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 22px;
+            animation: slideDown 0.8s ease 0.05s both;
+        }
+
+        .logo {
+            max-width: 180px;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 14px;
+            filter: drop-shadow(0 6px 16px rgba(13, 74, 122, 0.18));
+        }
+
+        /* ============ COMPANY NAME ============ */
+        .company-name {
+            font-family: var(--font-primary);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 18px;
+            letter-spacing: -0.5px;
+            animation: slideUp 0.8s ease 0.15s both;
+        }
+
+        /* ============ STATUS BADGE ============ */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(13, 74, 122, 0.08);
+            color: var(--color-primary);
+            padding: 9px 18px;
+            border-radius: 50px;
+            font-family: var(--font-primary);
+            font-size: 0.825rem;
+            font-weight: 600;
+            margin-bottom: 28px;
+            animation: slideUp 0.8s ease 0.25s both;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .status-dot::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            animation: pulse 1.6s ease-out infinite;
+        }
+
+        @keyframes pulse {
+            0%   { transform: scale(1);   opacity: 0.85; }
+            100% { transform: scale(2.6); opacity: 0; }
+        }
+
+        /* ============ MESSAGE ============ */
+        .message {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            max-width: 480px;
+            margin: 0 auto 32px;
+            animation: slideUp 0.8s ease 0.35s both;
+        }
+
+        .message strong {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* ============ DIVIDER ============ */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+            margin: 0 0 28px;
+            animation: fadeIn 1s ease 0.45s both;
+        }
+
+        /* ============ CONTACT SECTION ============ */
+        .contact-section { animation: slideUp 0.8s ease 0.45s both; }
+
+        .contact-label {
+            font-family: var(--font-primary);
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--color-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            margin-bottom: 18px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-bg-soft);
+            color: var(--color-primary);
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-icon:hover,
+        .contact-icon:focus-visible {
+            transform: translateY(-4px);
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .contact-icon:hover svg,
+        .contact-icon:focus-visible svg {
+            transform: scale(1.12);
+        }
+
+        /* Brand-color hovers */
+        .contact-icon.facebook:hover  { background-color: #1877F2; color: #fff; box-shadow: 0 10px 22px rgba(24, 119, 242, 0.35); }
+        .contact-icon.whatsapp:hover  { background-color: #25D366; color: #fff; box-shadow: 0 10px 22px rgba(37, 211, 102, 0.35); }
+        .contact-icon.phone:hover     { background-color: var(--color-primary); color: #fff; box-shadow: 0 10px 22px rgba(13, 74, 122, 0.35); }
+        .contact-icon.instagram:hover { background-color: #E4405F; color: #fff; box-shadow: 0 10px 22px rgba(228, 64, 95, 0.35); }
+        .contact-icon.mail:hover      { background-color: #EA4335; color: #fff; box-shadow: 0 10px 22px rgba(234, 67, 53, 0.35); }
+
+        /* Hover tooltip label */
+        .contact-icon::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: -26px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-primary);
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--color-muted);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.25s ease, bottom 0.25s ease;
+            pointer-events: none;
+        }
+
+        .contact-icon:hover::after { opacity: 1; bottom: -22px; }
+
+        /* ============ COPYRIGHT ============ */
+        .copyright {
+            margin-top: 26px;
+            font-size: 0.8rem;
+            color: var(--color-muted);
+            font-family: var(--font-secondary);
+            animation: fadeIn 1s ease 0.65s both;
+        }
+
+        .copyright a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .copyright a:hover { color: var(--color-primary-light); }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes fadeIn     { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInUp   { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideUp    { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideDown  { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 640px) {
+            .maintenance-card { padding: 42px 26px 38px; border-radius: 20px; }
+            .logo { max-width: 140px; }
+            .company-name { font-size: 1.55rem; }
+            .message { font-size: 0.95rem; line-height: 1.75; }
+            .contact-icon { width: 44px; height: 44px; }
+            .contact-icon svg { width: 18px; height: 18px; }
+            .contact-icons { gap: 12px; }
+        }
+
+        @media (max-width: 380px) {
+            body { padding: 16px; }
+            .maintenance-card { padding: 34px 20px 32px; }
+            .logo { max-width: 112px; }
+            .company-name { font-size: 1.35rem; }
+            .status-badge { font-size: 0.75rem; padding: 8px 14px; }
+            .contact-icons { gap: 10px; }
+            .contact-icon { width: 40px; height: 40px; }
+            .contact-icon::after { display: none; }
+        }
+
+        /* ============ ACCESSIBILITY ============ */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Subtle animated progress bar to convey "update in progress" -->
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <main class="maintenance-container">
+        <article class="maintenance-card">
+            <!-- Brand logo (reused from existing codebase) -->
+            <div class="logo-wrapper">
+                <img
+                    src="https://raw.githubusercontent.com/websolutionsza/websolutionsSA/refs/heads/main/WEBSOLU%20LOGO.png"
+                    alt="WebSolutionsSA Logo"
+                    class="logo"
+                    width="180"
+                    height="auto"
+                />
+            </div>
+
+            <!-- Company name -->
+            <h1 class="company-name">WebSolutionsSA</h1>
+
+            <!-- Status indicator -->
+            <div class="status-badge" role="status" aria-live="polite">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>System Update in Progress</span>
+            </div>
+
+            <!-- Apology / status message -->
+            <p class="message">
+                We sincerely apologize for the temporary interruption.
+                <strong>WebSolutionsSA</strong> is currently undergoing scheduled
+                system updates to improve your experience. Full services will be
+                back online shortly. Thank you for your patience.
+            </p>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <!-- Social & contact links -->
+            <section class="contact-section" aria-label="Contact and social links">
+                <p class="contact-label">Connect With Us</p>
+
+                <nav class="contact-icons" aria-label="Social and contact options">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/profile.php?id=61590432847744"
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-icon facebook"
+                       aria-label="Visit WebSolutionsSA on Facebook"
+                       data-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/27649890296?text=Hi%20WebSolutionsSA%2C%20I%20noticed%20your%20website%20is%20under%20maintenance%20and%20I'd%20like%20to%20get%20in%20touch."
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-icon whatsapp"
+                       aria-label="Chat with WebSolutionsSA on WhatsApp"
+                       data-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Phone -->
+                    <a href="tel:+27662914212"
+                       class="contact-icon phone"
+                       aria-label="Call WebSolutionsSA at +27 66 291 4212"
+                       data-label="Call Us">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.487 17.14l-4.065-3.696a1.001 1.001 0 00-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.395a1 1 0 00.043-1.391L6.859 3.513a1 1 0 00-1.391-.087l-2.17 1.861a1 1 0 00-.29.649c-.015.252-.288 6.205 4.286 10.783C10.781 19.302 14.749 20 16.51 20c.271 0 .435-.014.481-.016a1 1 0 00.649-.291l1.86-2.171a1 1 0 00-.073-1.382z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/websolutions.sa?igsh=dnVjbmg0ZHc1bjhm&utm_source=qr"
+                       target="_blank" rel="noopener noreferrer"
+                       class="contact-icon instagram"
+                       aria-label="Visit WebSolutionsSA on Instagram"
+                       data-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Mail -->
+                    <a href="mailto:websolutionssa0@gmail.com?subject=Support%20Inquiry%20%E2%80%94%20WebSolutionsSA&body=Hi%20WebSolutionsSA%2C%0A%0AI%20visited%20your%20website%20and%20noticed%20it%20is%20under%20maintenance.%20I%20would%20like%20to%20get%20in%20touch%20regarding%3A%0A%0A"
+                       class="contact-icon mail"
+                       aria-label="Email WebSolutionsSA support"
+                       data-label="Email Us">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.041l10 7.013 10-7.013V19H2z"/>
+                        </svg>
+                    </a>
+                </nav>
+            </section>
+        </article>
+
+        <p class="copyright">
+            &copy; <span id="currentYear">2025</span>
+            <a href="https://websolutionssa.com">WebSolutionsSA</a>. All rights reserved.
+        </p>
+    </main>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
